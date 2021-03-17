@@ -7,4 +7,3 @@ baseurl: "/unifed"
 url: "https://kiancross.github.io/"
 
 theme: just-the-docs
-remote_theme: pmarsceill/just-the-docs
