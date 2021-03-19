@@ -112,6 +112,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/backend_core.base.html" class="tsd-kind-icon">Base</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/backend_core.community.html" class="tsd-kind-icon">Community</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/backend_core.invalidpostbodyformaterror.html" class="tsd-kind-icon">Invalid<wbr>Post<wbr>Body<wbr>Format<wbr>Error</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/backend_core.invalidpostbodytypeerror.html" class="tsd-kind-icon">Invalid<wbr>Post<wbr>Body<wbr>Type<wbr>Error</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/backend_core.post.html" class="tsd-kind-icon">Post</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/backend_core.publicuser.html" class="tsd-kind-icon">Public<wbr>User</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/backend_core.remotereference.html" class="tsd-kind-icon">Remote<wbr>Reference</a></li>
@@ -145,7 +147,9 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="backend_core.html#datetounixtimestamp" class="tsd-kind-icon">date<wbr>ToUnix<wbr>Timestamp</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="backend_core.html#extractpostbody" class="tsd-kind-icon">extract<wbr>Post<wbr>Body</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="backend_core.html#getidfromref" class="tsd-kind-icon">get<wbr>IdFrom<wbr>Ref</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="backend_core.html#getvalidationmessage" class="tsd-kind-icon">get<wbr>Validation<wbr>Message</a></li>
 							</ul>
 						</section>
 					</div>
@@ -167,7 +171,7 @@
 					<div class="tsd-signature tsd-kind-icon">EntityID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/3558381/packages/backend-core/src/models/base.ts#L11">packages/backend-core/src/models/base.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/5b73322/packages/backend-core/src/models/base.ts#L11">packages/backend-core/src/models/base.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -177,7 +181,7 @@
 					<div class="tsd-signature tsd-kind-icon">JSONArray<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AnyJSON</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/3558381/packages/backend-core/src/types.ts#L14">packages/backend-core/src/types.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/5b73322/packages/backend-core/src/types.ts#L14">packages/backend-core/src/types.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -190,7 +194,7 @@
 					<div class="tsd-signature tsd-kind-icon">Community<wbr>Model<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReturnModelType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><a href="" class="tsd-signature-type" data-tsd-kind="Class">Community</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">BeAnObject</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/3558381/packages/backend-core/src/models/community.ts#L67">packages/backend-core/src/models/community.ts:67</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/5b73322/packages/backend-core/src/models/community.ts#L64">packages/backend-core/src/models/community.ts:64</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -200,7 +204,7 @@
 					<div class="tsd-signature tsd-kind-icon">Post<wbr>Model<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReturnModelType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><a href="" class="tsd-signature-type" data-tsd-kind="Class">Post</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">BeAnObject</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/3558381/packages/backend-core/src/models/post.ts#L101">packages/backend-core/src/models/post.ts:101</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/5b73322/packages/backend-core/src/models/post.ts#L95">packages/backend-core/src/models/post.ts:95</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -210,7 +214,7 @@
 					<div class="tsd-signature tsd-kind-icon">User<wbr>Model<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReturnModelType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><a href="" class="tsd-signature-type" data-tsd-kind="Class">User</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">BeAnObject</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/3558381/packages/backend-core/src/models/user.ts#L32">packages/backend-core/src/models/user.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/5b73322/packages/backend-core/src/models/user.ts#L32">packages/backend-core/src/models/user.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -221,22 +225,45 @@
 					<a name="datetounixtimestamp" class="tsd-anchor"></a>
 					<h3>date<wbr>ToUnix<wbr>Timestamp</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">date<wbr>ToUnix<wbr>Timestamp<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">date<wbr>ToUnix<wbr>Timestamp<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/3558381/packages/backend-core/src/models/helpers.ts#L8">packages/backend-core/src/models/helpers.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/5b73322/packages/backend-core/src/models/helpers.ts#L8">packages/backend-core/src/models/helpers.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>date: <span class="tsd-signature-type">Date</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> date: <span class="tsd-signature-type">Date</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="extractpostbody" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> extract<wbr>Post<wbr>Body</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">extract<wbr>Post<wbr>Body<span class="tsd-signature-symbol">(</span>post<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PostContent</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/5b73322/packages/backend-core/src/posts.ts#L17">packages/backend-core/src/posts.ts:17</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>post: <span class="tsd-signature-type">unknown</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PostContent</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -244,13 +271,13 @@
 					<a name="getidfromref" class="tsd-anchor"></a>
 					<h3>get<wbr>IdFrom<wbr>Ref</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>IdFrom<wbr>Ref&lt;T&gt;<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Ref</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="backend_core.html#entityid" class="tsd-signature-type" data-tsd-kind="Type alias">EntityID</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>IdFrom<wbr>Ref&lt;T&gt;<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Ref</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="backend_core.html#entityid" class="tsd-signature-type" data-tsd-kind="Type alias">EntityID</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/3558381/packages/backend-core/src/models/helpers.ts#L12">packages/backend-core/src/models/helpers.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/5b73322/packages/backend-core/src/models/helpers.ts#L12">packages/backend-core/src/models/helpers.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -262,10 +289,33 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>item: <span class="tsd-signature-type">Ref</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>item: <span class="tsd-signature-type">Ref</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="backend_core.html#entityid" class="tsd-signature-type" data-tsd-kind="Type alias">EntityID</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getvalidationmessage" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Validation<wbr>Message</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Validation<wbr>Message<span class="tsd-signature-symbol">(</span>errors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidationError</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/5b73322/packages/backend-core/src/helpers.ts#L7">packages/backend-core/src/helpers.ts:7</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>errors: <span class="tsd-signature-type">ValidationError</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -320,6 +370,12 @@
 								<a href="../classes/backend_core.community.html" class="tsd-kind-icon">Community</a>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="../classes/backend_core.invalidpostbodyformaterror.html" class="tsd-kind-icon">Invalid<wbr>Post<wbr>Body<wbr>Format<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="../classes/backend_core.invalidpostbodytypeerror.html" class="tsd-kind-icon">Invalid<wbr>Post<wbr>Body<wbr>Type<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
 								<a href="../classes/backend_core.post.html" class="tsd-kind-icon">Post</a>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
@@ -358,8 +414,14 @@
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="backend_core.html#datetounixtimestamp" class="tsd-kind-icon">date<wbr>ToUnix<wbr>Timestamp</a>
 							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="backend_core.html#extractpostbody" class="tsd-kind-icon">extract<wbr>Post<wbr>Body</a>
+							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 								<a href="backend_core.html#getidfromref" class="tsd-kind-icon">get<wbr>IdFrom<wbr>Ref</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="backend_core.html#getvalidationmessage" class="tsd-kind-icon">get<wbr>Validation<wbr>Message</a>
 							</li>
 						</ul>
 					</li>
