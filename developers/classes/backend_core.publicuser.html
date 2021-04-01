@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Base | Unifed Developer Documentation</title>
+	<title>PublicUser | Unifed Developer Documentation</title>
 	<meta name="description" content="Documentation for Unifed Developer Documentation">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../modules/backend_core.html">backend-core</a>
 				</li>
 				<li>
-					<a href="backend_core.base.html">Base</a>
+					<a href="backend_core.publicuser.html">PublicUser</a>
 				</li>
 			</ul>
-			<h1>Class Base</h1>
+			<h1>Class PublicUser</h1>
 		</div>
 	</div>
 </header>
@@ -70,22 +70,13 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">TimeStamps</span>
+						<a href="backend_core.base.html" class="tsd-signature-type" data-tsd-kind="Class">Base</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">Base</span>
+								<span class="target">PublicUser</span>
 								<ul class="tsd-hierarchy">
 									<li>
-										<a href="backend_core.community.html" class="tsd-signature-type" data-tsd-kind="Class">Community</a>
-									</li>
-									<li>
-										<a href="backend_core.post.html" class="tsd-signature-type" data-tsd-kind="Class">Post</a>
-									</li>
-									<li>
-										<a href="backend_core.publicuser.html" class="tsd-signature-type" data-tsd-kind="Class">PublicUser</a>
-									</li>
-									<li>
-										<a href="backend_core.remotereference.html" class="tsd-signature-type" data-tsd-kind="Class">RemoteReference</a>
+										<a href="backend_core.user.html" class="tsd-signature-type" data-tsd-kind="Class">User</a>
 									</li>
 								</ul>
 							</li>
@@ -100,28 +91,30 @@
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="backend_core.base.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="backend_core.publicuser.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="backend_core.base.html#_id" class="tsd-kind-icon">_id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="backend_core.base.html#host" class="tsd-kind-icon">host</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="backend_core.publicuser.html#_id" class="tsd-kind-icon">_id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="backend_core.publicuser.html#host" class="tsd-kind-icon">host</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="backend_core.publicuser.html#profile" class="tsd-kind-icon">profile</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="backend_core.publicuser.html#username" class="tsd-kind-icon">username</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="backend_core.base.html#created" class="tsd-kind-icon">created</a></li>
-								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="backend_core.base.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="backend_core.base.html#modified" class="tsd-kind-icon">modified</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="backend_core.publicuser.html#created" class="tsd-kind-icon">created</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="backend_core.publicuser.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="backend_core.publicuser.html#modified" class="tsd-kind-icon">modified</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_core.base.html#tojson" class="tsd-kind-icon">toJSON</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="backend_core.publicuser.html#tojson" class="tsd-kind-icon">toJSON</a></li>
 							</ul>
 						</section>
 					</div>
@@ -133,47 +126,69 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Base<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="backend_core.base.html" class="tsd-signature-type" data-tsd-kind="Class">Base</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Public<wbr>User<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="backend_core.publicuser.html" class="tsd-signature-type" data-tsd-kind="Class">PublicUser</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from defaultClasses.TimeStamps.constructor</p>
+								<p>Inherited from <a href="backend_core.base.html">Base</a>.<a href="backend_core.base.html#constructor">constructor</a></p>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="backend_core.base.html" class="tsd-signature-type" data-tsd-kind="Class">Base</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="backend_core.publicuser.html" class="tsd-signature-type" data-tsd-kind="Class">PublicUser</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_id" class="tsd-anchor"></a>
 					<h3>_id</h3>
 					<div class="tsd-signature tsd-kind-icon">_id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="backend_core.base.html">Base</a>.<a href="backend_core.base.html#_id">_id</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-core/src/models/base.ts#L16">packages/backend-core/src/models/base.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="host" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> host</h3>
 					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="backend_core.base.html">Base</a>.<a href="backend_core.base.html#host">host</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-core/src/models/base.ts#L19">packages/backend-core/src/models/base.ts:19</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="profile" class="tsd-anchor"></a>
+					<h3>profile</h3>
+					<div class="tsd-signature tsd-kind-icon">profile<span class="tsd-signature-symbol">:</span> <a href="backend_core.userprofile.html" class="tsd-signature-type" data-tsd-kind="Class">UserProfile</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-core/src/models/public-user.ts#L34">packages/backend-core/src/models/public-user.ts:34</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="username" class="tsd-anchor"></a>
+					<h3>username</h3>
+					<div class="tsd-signature tsd-kind-icon">username<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-core/src/models/public-user.ts#L28">packages/backend-core/src/models/public-user.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 					<a name="created" class="tsd-anchor"></a>
 					<h3>created</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> created<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> created<span class="tsd-signature-symbol">(</span>created<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
@@ -202,10 +217,10 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 					<a name="id" class="tsd-anchor"></a>
 					<h3>id</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> id<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> id<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
@@ -234,10 +249,10 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 					<a name="modified" class="tsd-anchor"></a>
 					<h3>modified</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> modified<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> modified<span class="tsd-signature-symbol">(</span>modified<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
@@ -269,17 +284,18 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="tojson" class="tsd-anchor"></a>
 					<h3>toJSON</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/backend_core.jsonmap.html" class="tsd-signature-type" data-tsd-kind="Interface">JSONMap</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="backend_core.base.html">Base</a>.<a href="backend_core.base.html#tojson">toJSON</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-core/src/models/base.ts#L46">packages/backend-core/src/models/base.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-core/src/models/public-user.ts#L36">packages/backend-core/src/models/public-user.ts:36</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/backend_core.jsonmap.html" class="tsd-signature-type" data-tsd-kind="Interface">JSONMap</a></h4>
@@ -327,31 +343,8 @@
 					<li class="current tsd-kind-module">
 						<a href="../modules/backend_core.html" class="tsd-kind-icon">backend-<wbr>core</a>
 						<ul>
-							<li class="current tsd-kind-class tsd-parent-kind-module">
+							<li class=" tsd-kind-class tsd-parent-kind-module">
 								<a href="backend_core.base.html" class="tsd-kind-icon">Base</a>
-								<ul>
-									<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-										<a href="backend_core.base.html#constructor" class="tsd-kind-icon">constructor</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-class">
-										<a href="backend_core.base.html#_id" class="tsd-kind-icon">_id</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-class">
-										<a href="backend_core.base.html#host" class="tsd-kind-icon">host</a>
-									</li>
-									<li class=" tsd-kind-accessor tsd-parent-kind-class">
-										<a href="backend_core.base.html#created" class="tsd-kind-icon">created</a>
-									</li>
-									<li class=" tsd-kind-accessor tsd-parent-kind-class">
-										<a href="backend_core.base.html#id" class="tsd-kind-icon">id</a>
-									</li>
-									<li class=" tsd-kind-accessor tsd-parent-kind-class">
-										<a href="backend_core.base.html#modified" class="tsd-kind-icon">modified</a>
-									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="backend_core.base.html#tojson" class="tsd-kind-icon">toJSON</a>
-									</li>
-								</ul>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
 								<a href="backend_core.community.html" class="tsd-kind-icon">Community</a>
@@ -365,8 +358,37 @@
 							<li class=" tsd-kind-class tsd-parent-kind-module">
 								<a href="backend_core.post.html" class="tsd-kind-icon">Post</a>
 							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
+							<li class="current tsd-kind-class tsd-parent-kind-module">
 								<a href="backend_core.publicuser.html" class="tsd-kind-icon">Public<wbr>User</a>
+								<ul>
+									<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+										<a href="backend_core.publicuser.html#constructor" class="tsd-kind-icon">constructor</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+										<a href="backend_core.publicuser.html#_id" class="tsd-kind-icon">_id</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+										<a href="backend_core.publicuser.html#host" class="tsd-kind-icon">host</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-class">
+										<a href="backend_core.publicuser.html#profile" class="tsd-kind-icon">profile</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-class">
+										<a href="backend_core.publicuser.html#username" class="tsd-kind-icon">username</a>
+									</li>
+									<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+										<a href="backend_core.publicuser.html#created" class="tsd-kind-icon">created</a>
+									</li>
+									<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+										<a href="backend_core.publicuser.html#id" class="tsd-kind-icon">id</a>
+									</li>
+									<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+										<a href="backend_core.publicuser.html#modified" class="tsd-kind-icon">modified</a>
+									</li>
+									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+										<a href="backend_core.publicuser.html#tojson" class="tsd-kind-icon">toJSON</a>
+									</li>
+								</ul>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
 								<a href="backend_core.remotereference.html" class="tsd-kind-icon">Remote<wbr>Reference</a>
@@ -448,23 +470,24 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 		</div>
 	</div>

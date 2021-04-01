@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Config | Unifed Developer Documentation</title>
+	<title>Parser | Unifed Developer Documentation</title>
 	<meta name="description" content="Documentation for Unifed Developer Documentation">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../modules/backend_ml.html">backend-ml</a>
 				</li>
 				<li>
-					<a href="backend_ml.config.html">Config</a>
+					<a href="backend_ml.parser.html">Parser</a>
 				</li>
 			</ul>
-			<h1>Interface Config</h1>
+			<h1>Class Parser</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,21 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Config</span>
+						<span class="target">Parser</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="backend_ml.enronparser.html" class="tsd-signature-type" data-tsd-kind="Class">EnronParser</a>
+							</li>
+							<li>
+								<a href="backend_ml.smsparser.html" class="tsd-signature-type" data-tsd-kind="Class">SmsParser</a>
+							</li>
+							<li>
+								<a href="backend_ml.spamassasinparser.html" class="tsd-signature-type" data-tsd-kind="Class">SpamAssasinParser</a>
+							</li>
+							<li>
+								<a href="backend_ml.testingparser.html" class="tsd-signature-type" data-tsd-kind="Class">TestingParser</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -79,102 +93,55 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="backend_ml.config.html#dropout" class="tsd-kind-icon">dropout</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="backend_ml.config.html#embeddingdimension" class="tsd-kind-icon">embedding<wbr>Dimension</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="backend_ml.config.html#epochs" class="tsd-kind-icon">epochs</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="backend_ml.config.html#lstmunits" class="tsd-kind-icon">lstm<wbr>Units</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="backend_ml.config.html#maxsequencelength" class="tsd-kind-icon">max<wbr>Sequence<wbr>Length</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="backend_ml.config.html#patience" class="tsd-kind-icon">patience</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="backend_ml.config.html#trainingratio" class="tsd-kind-icon">training<wbr>Ratio</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="backend_ml.config.html#vocabsize" class="tsd-kind-icon">vocab<wbr>Size</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="backend_ml.parser.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_ml.parser.html#getmessages" class="tsd-kind-icon">get<wbr>Messages</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="dropout" class="tsd-anchor"></a>
-					<h3>dropout</h3>
-					<div class="tsd-signature tsd-kind-icon">dropout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/config.ts#L13">packages/backend-ml/src/config.ts:13</a></li>
-						</ul>
-					</aside>
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Parser<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="backend_ml.parser.html" class="tsd-signature-type" data-tsd-kind="Class">Parser</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="backend_ml.parser.html" class="tsd-signature-type" data-tsd-kind="Class">Parser</a></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="embeddingdimension" class="tsd-anchor"></a>
-					<h3>embedding<wbr>Dimension</h3>
-					<div class="tsd-signature tsd-kind-icon">embedding<wbr>Dimension<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/config.ts#L8">packages/backend-ml/src/config.ts:8</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="epochs" class="tsd-anchor"></a>
-					<h3>epochs</h3>
-					<div class="tsd-signature tsd-kind-icon">epochs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/config.ts#L10">packages/backend-ml/src/config.ts:10</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="lstmunits" class="tsd-anchor"></a>
-					<h3>lstm<wbr>Units</h3>
-					<div class="tsd-signature tsd-kind-icon">lstm<wbr>Units<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/config.ts#L12">packages/backend-ml/src/config.ts:12</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="maxsequencelength" class="tsd-anchor"></a>
-					<h3>max<wbr>Sequence<wbr>Length</h3>
-					<div class="tsd-signature tsd-kind-icon">max<wbr>Sequence<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/config.ts#L7">packages/backend-ml/src/config.ts:7</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="patience" class="tsd-anchor"></a>
-					<h3>patience</h3>
-					<div class="tsd-signature tsd-kind-icon">patience<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/config.ts#L11">packages/backend-ml/src/config.ts:11</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="trainingratio" class="tsd-anchor"></a>
-					<h3>training<wbr>Ratio</h3>
-					<div class="tsd-signature tsd-kind-icon">training<wbr>Ratio<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/config.ts#L9">packages/backend-ml/src/config.ts:9</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="vocabsize" class="tsd-anchor"></a>
-					<h3>vocab<wbr>Size</h3>
-					<div class="tsd-signature tsd-kind-icon">vocab<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/config.ts#L6">packages/backend-ml/src/config.ts:6</a></li>
-						</ul>
-					</aside>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getmessages" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> get<wbr>Messages</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Messages<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/backend_ml.message.html" class="tsd-signature-type" data-tsd-kind="Interface">Message</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/parsers/parser.ts#L10">packages/backend-ml/src/parsers/parser.ts:10</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/backend_ml.message.html" class="tsd-signature-type" data-tsd-kind="Interface">Message</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -230,63 +197,45 @@
 						<a href="../modules/backend_ml.html" class="tsd-kind-icon">backend-<wbr>ml</a>
 						<ul>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/backend_ml.enronparser.html" class="tsd-kind-icon">Enron<wbr>Parser</a>
+								<a href="backend_ml.enronparser.html" class="tsd-kind-icon">Enron<wbr>Parser</a>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/backend_ml.invalidfileerror.html" class="tsd-kind-icon">Invalid<wbr>File<wbr>Error</a>
+								<a href="backend_ml.invalidfileerror.html" class="tsd-kind-icon">Invalid<wbr>File<wbr>Error</a>
 							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/backend_ml.parser.html" class="tsd-kind-icon">Parser</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/backend_ml.smsparser.html" class="tsd-kind-icon">Sms<wbr>Parser</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/backend_ml.spamassasinparser.html" class="tsd-kind-icon">Spam<wbr>Assasin<wbr>Parser</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/backend_ml.testingparser.html" class="tsd-kind-icon">Testing<wbr>Parser</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/backend_ml.tokenizer.html" class="tsd-kind-icon">Tokenizer</a>
-							</li>
-							<li class="current tsd-kind-interface tsd-parent-kind-module">
-								<a href="backend_ml.config.html" class="tsd-kind-icon">Config</a>
+							<li class="current tsd-kind-class tsd-parent-kind-module">
+								<a href="backend_ml.parser.html" class="tsd-kind-icon">Parser</a>
 								<ul>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="backend_ml.config.html#dropout" class="tsd-kind-icon">dropout</a>
+									<li class=" tsd-kind-constructor tsd-parent-kind-class">
+										<a href="backend_ml.parser.html#constructor" class="tsd-kind-icon">constructor</a>
 									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="backend_ml.config.html#embeddingdimension" class="tsd-kind-icon">embedding<wbr>Dimension</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="backend_ml.config.html#epochs" class="tsd-kind-icon">epochs</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="backend_ml.config.html#lstmunits" class="tsd-kind-icon">lstm<wbr>Units</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="backend_ml.config.html#maxsequencelength" class="tsd-kind-icon">max<wbr>Sequence<wbr>Length</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="backend_ml.config.html#patience" class="tsd-kind-icon">patience</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="backend_ml.config.html#trainingratio" class="tsd-kind-icon">training<wbr>Ratio</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="backend_ml.config.html#vocabsize" class="tsd-kind-icon">vocab<wbr>Size</a>
+									<li class=" tsd-kind-method tsd-parent-kind-class">
+										<a href="backend_ml.parser.html#getmessages" class="tsd-kind-icon">get<wbr>Messages</a>
 									</li>
 								</ul>
 							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="backend_ml.message.html" class="tsd-kind-icon">Message</a>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="backend_ml.smsparser.html" class="tsd-kind-icon">Sms<wbr>Parser</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="backend_ml.spamassasinparser.html" class="tsd-kind-icon">Spam<wbr>Assasin<wbr>Parser</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="backend_ml.testingparser.html" class="tsd-kind-icon">Testing<wbr>Parser</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="backend_ml.tokenizer.html" class="tsd-kind-icon">Tokenizer</a>
 							</li>
 							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="backend_ml.sentencemapping.html" class="tsd-kind-icon">Sentence<wbr>Mapping</a>
+								<a href="../interfaces/backend_ml.config.html" class="tsd-kind-icon">Config</a>
 							</li>
 							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="backend_ml.zipfileentry.html" class="tsd-kind-icon">Zip<wbr>File<wbr>Entry</a>
+								<a href="../interfaces/backend_ml.message.html" class="tsd-kind-icon">Message</a>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-module">
+								<a href="../interfaces/backend_ml.sentencemapping.html" class="tsd-kind-icon">Sentence<wbr>Mapping</a>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-module">
+								<a href="../interfaces/backend_ml.zipfileentry.html" class="tsd-kind-icon">Zip<wbr>File<wbr>Entry</a>
 							</li>
 							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 								<a href="../modules/backend_ml.html#sequence" class="tsd-kind-icon">Sequence</a>
@@ -371,12 +320,13 @@
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 		</div>
 	</div>

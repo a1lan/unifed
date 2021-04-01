@@ -65,36 +65,13 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<a href="#unifed" id="unifed" style="color: inherit; text-decoration: none;">
-						<h1>Unifed</h1>
+					<a href="#unifedshared" id="unifedshared" style="color: inherit; text-decoration: none;">
+						<h1>@unifed/shared</h1>
 					</a>
-					<p><a href="https://github.com/kiancross/unifed/actions/workflows/continuous-integration.yml?query=event%3Aschedule"><img src="https://github.com/kiancross/unifed/actions/workflows/continuous-integration.yml/badge.svg?event=schedule" alt="Continuous Integration"></a>
-						<a href="https://github.com/kiancross/unifed/actions?query=workflow%3A%22School+GitLab+Mirror%22"><img src="https://github.com/kiancross/unifed/workflows/School%20GitLab%20Mirror/badge.svg" alt="School GitLab Mirror"></a>
-					<a href="https://codecov.io/gh/kiancross/unifed"><img src="https://codecov.io/gh/kiancross/unifed/branch/master/graph/badge.svg?token=FI52RC1RQV" alt="codecov"></a></p>
-					<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
-						<h2>Documentation</h2>
-					</a>
-					<p>Documentation for Unifed can be found on the
-					<a href="https://github.com/kiancross/unifed/wiki">Wiki</a>.</p>
-					<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
-						<h2>Contributing</h2>
-					</a>
-					<p>Check the <a href="https://github.com/kiancross/unifed/wiki/Contributing">contributing checklist</a>.</p>
-					<a href="#automated-testing" id="automated-testing" style="color: inherit; text-decoration: none;">
-						<h3>Automated Testing</h3>
-					</a>
-					<p>On each pull request, automated tests are run. These must all pass before
-					the pull request may be merged.</p>
-					<p>We use <a href="https://codecov.io/">Codecov</a> to generate a test coverage report. In
-						order to access the report, you should log into Codecov using your GitHub
-					account.</p>
-					<p><strong>Always run <code>yarn checks</code> before making or pushing code to a pull request
-					and ensure the checks pass. This preserves our limited GitHub action minutes.</strong></p>
-					<a href="#synchronisation-to-school39s-gitlab" id="synchronisation-to-school39s-gitlab" style="color: inherit; text-decoration: none;">
-						<h2>Synchronisation to School&#39;s GitLab</h2>
-					</a>
-					<p>Code pushed to this repository is mirrored to the School&#39;s GitLab service at 6am
-					every morning.</p>
+					<p>This package is a collection of functions used across the
+						frontend and backend. Primarily, these are validation
+						functions, however any code intended for use across the
+					whole platform should be included here.</p>
 				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -102,50 +79,208 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>References</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="shared.html#validatecommunitydescription" class="tsd-kind-icon">validate<wbr>Community<wbr>Description</a></li>
-								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="shared.html#validateemail" class="tsd-kind-icon">validate<wbr>Email</a></li>
-								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="shared.html#validatename" class="tsd-kind-icon">validate<wbr>Name</a></li>
-								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="shared.html#validatepassword" class="tsd-kind-icon">validate<wbr>Password</a></li>
-								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="shared.html#validateusername" class="tsd-kind-icon">validate<wbr>Username</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/shared.passwordvalidationresult.html" class="tsd-kind-icon">Password<wbr>Validation<wbr>Result</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="shared.html#validatecommunitydescription" class="tsd-kind-icon">validate<wbr>Community<wbr>Description</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="shared.html#validateemail" class="tsd-kind-icon">validate<wbr>Email</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="shared.html#validatename" class="tsd-kind-icon">validate<wbr>Name</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="shared.html#validatepassword" class="tsd-kind-icon">validate<wbr>Password</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="shared.html#validateusername" class="tsd-kind-icon">validate<wbr>Username</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>References</h2>
-				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="validatecommunitydescription" class="tsd-anchor"></a>
-					<h3>validate<wbr>Community<wbr>Description</h3>
-					Re-exports <a href="">validateCommunityDescription</a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> validate<wbr>Community<wbr>Description</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">validate<wbr>Community<wbr>Description<span class="tsd-signature-symbol">(</span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/shared/src/validators/community-description.ts#L15">packages/shared/src/validators/community-description.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Validates that the given description for a community
+									meets the validation requirements:</p>
+								</div>
+								<ul>
+									<li>At least 1 character.</li>
+									<li>No more than 128 characters.</li>
+									<li>Any type of character.</li>
+								</ul>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>description: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The community&#39;s description.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="validateemail" class="tsd-anchor"></a>
-					<h3>validate<wbr>Email</h3>
-					Re-exports <a href="">validateEmail</a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> validate<wbr>Email</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">validate<wbr>Email<span class="tsd-signature-symbol">(</span>email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/shared/src/validators/email.ts#L13">packages/shared/src/validators/email.ts:13</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Validates that the given string is a valid
+									email address.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>email: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An email address to validate.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="validatename" class="tsd-anchor"></a>
-					<h3>validate<wbr>Name</h3>
-					Re-exports <a href="">validateName</a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> validate<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">validate<wbr>Name<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/shared/src/validators/name.ts#L18">packages/shared/src/validators/name.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Validates that the given name meets the
+									validation requirements:</p>
+								</div>
+								<ul>
+									<li>At least 1 character.</li>
+									<li>No more than 64 characters.</li>
+									<li>Any type of character.</li>
+								</ul>
+								<p>This function is used for names belonging
+								to both users and communities.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A name to validate.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="validatepassword" class="tsd-anchor"></a>
-					<h3>validate<wbr>Password</h3>
-					Re-exports <a href="">validatePassword</a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> validate<wbr>Password</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">validate<wbr>Password<span class="tsd-signature-symbol">(</span>password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/shared.passwordvalidationresult.html" class="tsd-signature-type" data-tsd-kind="Interface">PasswordValidationResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/shared/src/validators/password.ts#L37">packages/shared/src/validators/password.ts:37</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Validates that the given password meets the
+									strength requirements.</p>
+								</div>
+								<p>This check does not use any hard coded rules,
+									but rather uses a heuristic to measure how good
+								a password is.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>password: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A password to validate.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/shared.passwordvalidationresult.html" class="tsd-signature-type" data-tsd-kind="Interface">PasswordValidationResult</a></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="validateusername" class="tsd-anchor"></a>
-					<h3>validate<wbr>Username</h3>
-					Re-exports <a href="">validateUsername</a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> validate<wbr>Username</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">validate<wbr>Username<span class="tsd-signature-symbol">(</span>username<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/shared/src/validators/username.ts#L19">packages/shared/src/validators/username.ts:19</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Validates that the given username/ID meets the
+									validation requirements:</p>
+								</div>
+								<ul>
+									<li>At least 1 character.</li>
+									<li>No more than 24 characters.</li>
+									<li>Only contains alphanumeric characters, dashes
+									and underscores.</li>
+								</ul>
+								<p>This function is used for usernames/IDs belonging
+								to both users and communities.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>username: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A username/ID to validate.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -209,23 +344,23 @@
 					<li class="current tsd-kind-module">
 						<a href="shared.html" class="tsd-kind-icon">shared</a>
 						<ul>
-							<li class=" tsd-kind-reference tsd-parent-kind-module">
-								<a href="shared.html#validatecommunitydescription" class="tsd-kind-icon">validate<wbr>Community<wbr>Description</a>
-							</li>
-							<li class=" tsd-kind-reference tsd-parent-kind-module">
-								<a href="shared.html#validateemail" class="tsd-kind-icon">validate<wbr>Email</a>
-							</li>
-							<li class=" tsd-kind-reference tsd-parent-kind-module">
-								<a href="shared.html#validatename" class="tsd-kind-icon">validate<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-reference tsd-parent-kind-module">
-								<a href="shared.html#validatepassword" class="tsd-kind-icon">validate<wbr>Password</a>
-							</li>
-							<li class=" tsd-kind-reference tsd-parent-kind-module">
-								<a href="shared.html#validateusername" class="tsd-kind-icon">validate<wbr>Username</a>
-							</li>
 							<li class=" tsd-kind-interface tsd-parent-kind-module">
 								<a href="../interfaces/shared.passwordvalidationresult.html" class="tsd-kind-icon">Password<wbr>Validation<wbr>Result</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="shared.html#validatecommunitydescription" class="tsd-kind-icon">validate<wbr>Community<wbr>Description</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="shared.html#validateemail" class="tsd-kind-icon">validate<wbr>Email</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="shared.html#validatename" class="tsd-kind-icon">validate<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="shared.html#validatepassword" class="tsd-kind-icon">validate<wbr>Password</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="shared.html#validateusername" class="tsd-kind-icon">validate<wbr>Username</a>
 							</li>
 						</ul>
 					</li>

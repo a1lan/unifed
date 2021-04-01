@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CommunitiesFederationService | Unifed Developer Documentation</title>
+	<title>UserProfile | Unifed Developer Documentation</title>
 	<meta name="description" content="Documentation for Unifed Developer Documentation">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,13 +53,13 @@
 					<a href="../modules.html">Unifed Developer Documentation</a>
 				</li>
 				<li>
-					<a href="../modules/backend_federation_client.html">backend-federation-client</a>
+					<a href="../modules/backend_core.html">backend-core</a>
 				</li>
 				<li>
-					<a href="backend_federation_client.communitiesfederationservice.html">CommunitiesFederationService</a>
+					<a href="backend_core.userprofile.html">UserProfile</a>
 				</li>
 			</ul>
-			<h1>Class CommunitiesFederationService</h1>
+			<h1>Class UserProfile</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">CommunitiesFederationService</span>
+						<span class="target">UserProfile</span>
 					</li>
 				</ul>
 			</section>
@@ -81,14 +81,19 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="backend_federation_client.communitiesfederationservice.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="backend_core.userprofile.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="backend_core.userprofile.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_federation_client.communitiesfederationservice.html#getall" class="tsd-kind-icon">get<wbr>All</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_federation_client.communitiesfederationservice.html#getone" class="tsd-kind-icon">get<wbr>One</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_core.userprofile.html#tojson" class="tsd-kind-icon">toJSON</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,65 +105,46 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Communities<wbr>Federation<wbr>Service<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="backend_federation_client.communitiesfederationservice.html" class="tsd-signature-type" data-tsd-kind="Class">CommunitiesFederationService</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>User<wbr>Profile<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="backend_core.userprofile.html" class="tsd-signature-type" data-tsd-kind="Class">UserProfile</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="backend_federation_client.communitiesfederationservice.html" class="tsd-signature-type" data-tsd-kind="Class">CommunitiesFederationService</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="backend_core.userprofile.html" class="tsd-signature-type" data-tsd-kind="Class">UserProfile</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-core/src/models/public-user.ts#L15">packages/backend-core/src/models/public-user.ts:15</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getall" class="tsd-anchor"></a>
-					<h3>get<wbr>All</h3>
+					<a name="tojson" class="tsd-anchor"></a>
+					<h3>toJSON</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>All<span class="tsd-signature-symbol">(</span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Community</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/backend_core.jsonmap.html" class="tsd-signature-type" data-tsd-kind="Interface">JSONMap</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-federation-client/src/communities.ts#L20">packages/backend-federation-client/src/communities.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-core/src/models/public-user.ts#L17">packages/backend-core/src/models/public-user.ts:17</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>host: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Community</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getone" class="tsd-anchor"></a>
-					<h3>get<wbr>One</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>One<span class="tsd-signature-symbol">(</span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Community</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-federation-client/src/communities.ts#L44">packages/backend-federation-client/src/communities.ts:44</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>host: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>id: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Community</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/backend_core.jsonmap.html" class="tsd-signature-type" data-tsd-kind="Interface">JSONMap</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -170,10 +156,10 @@
 					<li class=" ">
 						<a href="../modules.html">Exports</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/backend_core.html">backend-<wbr>core</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/backend_federation_client.html">backend-<wbr>federation-<wbr>client</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -198,53 +184,92 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-module">
-						<a href="../modules/backend_core.html" class="tsd-kind-icon">backend-<wbr>core</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-module">
-						<a href="../modules/backend_federation_client.html" class="tsd-kind-icon">backend-<wbr>federation-<wbr>client</a>
+						<a href="../modules/backend_core.html" class="tsd-kind-icon">backend-<wbr>core</a>
 						<ul>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="backend_core.base.html" class="tsd-kind-icon">Base</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="backend_core.community.html" class="tsd-kind-icon">Community</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="backend_core.invalidpostbodyformaterror.html" class="tsd-kind-icon">Invalid<wbr>Post<wbr>Body<wbr>Format<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="backend_core.invalidpostbodytypeerror.html" class="tsd-kind-icon">Invalid<wbr>Post<wbr>Body<wbr>Type<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="backend_core.post.html" class="tsd-kind-icon">Post</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="backend_core.publicuser.html" class="tsd-kind-icon">Public<wbr>User</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="backend_core.remotereference.html" class="tsd-kind-icon">Remote<wbr>Reference</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="backend_core.user.html" class="tsd-kind-icon">User</a>
+							</li>
 							<li class="current tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_federation_client.communitiesfederationservice.html" class="tsd-kind-icon">Communities<wbr>Federation<wbr>Service</a>
+								<a href="backend_core.userprofile.html" class="tsd-kind-icon">User<wbr>Profile</a>
 								<ul>
 									<li class=" tsd-kind-constructor tsd-parent-kind-class">
-										<a href="backend_federation_client.communitiesfederationservice.html#constructor" class="tsd-kind-icon">constructor</a>
+										<a href="backend_core.userprofile.html#constructor" class="tsd-kind-icon">constructor</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-class">
+										<a href="backend_core.userprofile.html#name" class="tsd-kind-icon">name</a>
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="backend_federation_client.communitiesfederationservice.html#getall" class="tsd-kind-icon">get<wbr>All</a>
-									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="backend_federation_client.communitiesfederationservice.html#getone" class="tsd-kind-icon">get<wbr>One</a>
+										<a href="backend_core.userprofile.html#tojson" class="tsd-kind-icon">toJSON</a>
 									</li>
 								</ul>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_federation_client.communitynotfounderror.html" class="tsd-kind-icon">Community<wbr>Not<wbr>Found<wbr>Error</a>
+								<a href="backend_core.config.html" class="tsd-kind-icon">config</a>
 							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_federation_client.federationhttpclient.html" class="tsd-kind-icon">Federation<wbr>Http<wbr>Client</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_federation_client.postsfederationservice.html" class="tsd-kind-icon">Posts<wbr>Federation<wbr>Service</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="backend_federation_client.remoteresponseerror.html" class="tsd-kind-icon">Remote<wbr>Response<wbr>Error</a>
+							<li class=" tsd-kind-interface tsd-parent-kind-module">
+								<a href="../interfaces/backend_core.jsonmap.html" class="tsd-kind-icon">JSONMap</a>
 							</li>
 							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-								<a href="../modules/backend_federation_client.html#createpostprops" class="tsd-kind-icon">Create<wbr>Post<wbr>Props</a>
+								<a href="../modules/backend_core.html#entityid" class="tsd-kind-icon">EntityID</a>
 							</li>
 							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-								<a href="../modules/backend_federation_client.html#updatepostprops" class="tsd-kind-icon">Update<wbr>Post<wbr>Props</a>
+								<a href="../modules/backend_core.html#jsonarray" class="tsd-kind-icon">JSONArray</a>
+							</li>
+							<li class=" tsd-kind-variable tsd-parent-kind-module">
+								<a href="../modules/backend_core.html#communitymodel" class="tsd-kind-icon">Community<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-variable tsd-parent-kind-module">
+								<a href="../modules/backend_core.html#postmodel" class="tsd-kind-icon">Post<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-variable tsd-parent-kind-module">
+								<a href="../modules/backend_core.html#usermodel" class="tsd-kind-icon">User<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-variable tsd-parent-kind-module">
+								<a href="../modules/backend_core.html#logger" class="tsd-kind-icon">logger</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_federation_client.html#isstringarray" class="tsd-kind-icon">is<wbr>String<wbr>Array</a>
+								<a href="../modules/backend_core.html#datetounixtimestamp" class="tsd-kind-icon">date<wbr>ToUnix<wbr>Timestamp</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="../modules/backend_core.html#extractpostbody" class="tsd-kind-icon">extract<wbr>Post<wbr>Body</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+								<a href="../modules/backend_core.html#getidfromref" class="tsd-kind-icon">get<wbr>IdFrom<wbr>Ref</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="../modules/backend_core.html#getvalidationmessage" class="tsd-kind-icon">get<wbr>Validation<wbr>Message</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-module">
+						<a href="../modules/backend_federation_client.html" class="tsd-kind-icon">backend-<wbr>federation-<wbr>client</a>
+					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/backend_federation_server.html" class="tsd-kind-icon">backend-<wbr>federation-<wbr>server</a>
 					</li>
@@ -273,16 +298,17 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>

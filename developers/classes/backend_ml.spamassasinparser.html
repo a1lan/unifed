@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>EnronParser | Unifed Developer Documentation</title>
+	<title>SpamAssasinParser | Unifed Developer Documentation</title>
 	<meta name="description" content="Documentation for Unifed Developer Documentation">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../modules/backend_ml.html">backend-ml</a>
 				</li>
 				<li>
-					<a href="backend_ml.enronparser.html">EnronParser</a>
+					<a href="backend_ml.spamassasinparser.html">SpamAssasinParser</a>
 				</li>
 			</ul>
-			<h1>Class EnronParser</h1>
+			<h1>Class SpamAssasinParser</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 						<a href="backend_ml.parser.html" class="tsd-signature-type" data-tsd-kind="Class">Parser</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">EnronParser</span>
+								<span class="target">SpamAssasinParser</span>
 							</li>
 						</ul>
 					</li>
@@ -86,15 +86,15 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="backend_ml.enronparser.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="backend_ml.spamassasinparser.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="backend_ml.enronparser.html#getbody" class="tsd-kind-icon">get<wbr>Body</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="backend_ml.enronparser.html#getmessages" class="tsd-kind-icon">get<wbr>Messages</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="backend_ml.enronparser.html#parse" class="tsd-kind-icon">parse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="backend_ml.spamassasinparser.html#getbody" class="tsd-kind-icon">get<wbr>Body</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="backend_ml.spamassasinparser.html#getmessages" class="tsd-kind-icon">get<wbr>Messages</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="backend_ml.spamassasinparser.html#parse" class="tsd-kind-icon">parse</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,14 +106,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Enron<wbr>Parser<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="backend_ml.enronparser.html" class="tsd-signature-type" data-tsd-kind="Class">EnronParser</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Spam<wbr>Assasin<wbr>Parser<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="backend_ml.spamassasinparser.html" class="tsd-signature-type" data-tsd-kind="Class">SpamAssasinParser</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="backend_ml.parser.html">Parser</a>.<a href="backend_ml.parser.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/parsers/enron-parser.ts#L8">packages/backend-ml/src/parsers/enron-parser.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/parsers/spam-assasin-parser.ts#L9">packages/backend-ml/src/parsers/spam-assasin-parser.ts:9</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -122,7 +122,7 @@
 									<h5>path: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="backend_ml.enronparser.html" class="tsd-signature-type" data-tsd-kind="Class">EnronParser</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="backend_ml.spamassasinparser.html" class="tsd-signature-type" data-tsd-kind="Class">SpamAssasinParser</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -133,13 +133,13 @@
 					<a name="getbody" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Body</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Body<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Body<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/parsers/enron-parser.ts#L13">packages/backend-ml/src/parsers/enron-parser.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/parsers/spam-assasin-parser.ts#L14">packages/backend-ml/src/parsers/spam-assasin-parser.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -148,7 +148,7 @@
 									<h5>data: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -163,7 +163,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="backend_ml.parser.html">Parser</a>.<a href="backend_ml.parser.html#getmessages">getMessages</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/parsers/enron-parser.ts#L48">packages/backend-ml/src/parsers/enron-parser.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/parsers/spam-assasin-parser.ts#L39">packages/backend-ml/src/parsers/spam-assasin-parser.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/backend_ml.message.html" class="tsd-signature-type" data-tsd-kind="Interface">Message</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -180,7 +180,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/parsers/enron-parser.ts#L31">packages/backend-ml/src/parsers/enron-parser.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/efd20a7/packages/backend-ml/src/parsers/spam-assasin-parser.ts#L20">packages/backend-ml/src/parsers/spam-assasin-parser.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/backend_ml.message.html" class="tsd-signature-type" data-tsd-kind="Interface">Message</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -240,22 +240,8 @@
 					<li class="current tsd-kind-module">
 						<a href="../modules/backend_ml.html" class="tsd-kind-icon">backend-<wbr>ml</a>
 						<ul>
-							<li class="current tsd-kind-class tsd-parent-kind-module">
+							<li class=" tsd-kind-class tsd-parent-kind-module">
 								<a href="backend_ml.enronparser.html" class="tsd-kind-icon">Enron<wbr>Parser</a>
-								<ul>
-									<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-										<a href="backend_ml.enronparser.html#constructor" class="tsd-kind-icon">constructor</a>
-									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-										<a href="backend_ml.enronparser.html#getbody" class="tsd-kind-icon">get<wbr>Body</a>
-									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-										<a href="backend_ml.enronparser.html#getmessages" class="tsd-kind-icon">get<wbr>Messages</a>
-									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-										<a href="backend_ml.enronparser.html#parse" class="tsd-kind-icon">parse</a>
-									</li>
-								</ul>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
 								<a href="backend_ml.invalidfileerror.html" class="tsd-kind-icon">Invalid<wbr>File<wbr>Error</a>
@@ -266,8 +252,22 @@
 							<li class=" tsd-kind-class tsd-parent-kind-module">
 								<a href="backend_ml.smsparser.html" class="tsd-kind-icon">Sms<wbr>Parser</a>
 							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
+							<li class="current tsd-kind-class tsd-parent-kind-module">
 								<a href="backend_ml.spamassasinparser.html" class="tsd-kind-icon">Spam<wbr>Assasin<wbr>Parser</a>
+								<ul>
+									<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+										<a href="backend_ml.spamassasinparser.html#constructor" class="tsd-kind-icon">constructor</a>
+									</li>
+									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+										<a href="backend_ml.spamassasinparser.html#getbody" class="tsd-kind-icon">get<wbr>Body</a>
+									</li>
+									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+										<a href="backend_ml.spamassasinparser.html#getmessages" class="tsd-kind-icon">get<wbr>Messages</a>
+									</li>
+									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+										<a href="backend_ml.spamassasinparser.html#parse" class="tsd-kind-icon">parse</a>
+									</li>
+								</ul>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
 								<a href="backend_ml.testingparser.html" class="tsd-kind-icon">Testing<wbr>Parser</a>
