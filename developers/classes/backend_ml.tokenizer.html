@@ -66,6 +66,21 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Implementation of a tokenizer derived from
+						<a href="https://gist.github.com/dlebech/5bbabaece36753f8a29e7921d8e5bfc7">here</a>.</p>
+					</div>
+					<p>Used to convert a string into a sequence of numbers,
+						where smaller numbers indicate more frequently occurring
+					tokens.</p>
+					<dl class="tsd-comment-tags">
+						<dt>internal</dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -98,7 +113,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_ml.tokenizer.html#fromjson" class="tsd-kind-icon">fromJSON</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_ml.tokenizer.html#texttosequence" class="tsd-kind-icon">text<wbr>ToSequence</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_ml.tokenizer.html#tojson" class="tsd-kind-icon">toJSON</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="backend_ml.tokenizer.html#cleantext" class="tsd-kind-icon">clean<wbr>Text</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="backend_ml.tokenizer.html#tokenize" class="tsd-kind-icon">tokenize</a></li>
 							</ul>
 						</section>
 					</div>
@@ -116,13 +131,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/tokenizer.ts#L14">packages/backend-ml/src/tokenizer.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/tokenizer.ts#L44">packages/backend-ml/src/tokenizer.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>vocabSize: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The maximum size of the vocabulary.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="backend_ml.tokenizer.html" class="tsd-signature-type" data-tsd-kind="Class">Tokenizer</a></h4>
@@ -138,9 +156,15 @@
 					<div class="tsd-signature tsd-kind-icon">word<wbr>Counts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/tokenizer.ts#L14">packages/backend-ml/src/tokenizer.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/tokenizer.ts#L44">packages/backend-ml/src/tokenizer.ts:44</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A mapping between words (tokens) and their corresponding
+							frequencies.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="wordindex" class="tsd-anchor"></a>
@@ -148,9 +172,15 @@
 					<div class="tsd-signature tsd-kind-icon">word<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/tokenizer.ts#L13">packages/backend-ml/src/tokenizer.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/tokenizer.ts#L38">packages/backend-ml/src/tokenizer.ts:38</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A mapping between words (tokens) and their corresponding
+							index.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -165,13 +195,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/tokenizer.ts#L40">packages/backend-ml/src/tokenizer.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/tokenizer.ts#L97">packages/backend-ml/src/tokenizer.ts:97</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fits the tokenizer to a given set of strings.
+										The frequency that tokens appear in these model
+										strings will be used when generating sequences
+									for unknown strings.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>texts: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The strings to fit the tokenizer
+										with.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -188,13 +230,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/tokenizer.ts#L61">packages/backend-ml/src/tokenizer.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/tokenizer.ts#L137">packages/backend-ml/src/tokenizer.ts:137</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Loads a tokenizer from a given object.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>wordIndex: <a href="../modules/backend_ml.html#stringnumbermapping" class="tsd-signature-type" data-tsd-kind="Type alias">StringNumberMapping</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The object to loads the tokenizer from.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -211,16 +261,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/tokenizer.ts#L57">packages/backend-ml/src/tokenizer.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/tokenizer.ts#L127">packages/backend-ml/src/tokenizer.ts:127</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tokenizes a given string.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The string to tokenize.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/backend_ml.html#sequence" class="tsd-signature-type" data-tsd-kind="Type alias">Sequence</a></h4>
+							<p>The tokenized string.</p>
 						</li>
 					</ul>
 				</section>
@@ -234,33 +293,57 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/tokenizer.ts#L65">packages/backend-ml/src/tokenizer.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/tokenizer.ts#L147">packages/backend-ml/src/tokenizer.ts:147</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts the tokenizer to an object that can be
+									JSON encoded.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/backend_ml.html#stringnumbermapping" class="tsd-signature-type" data-tsd-kind="Type alias">StringNumberMapping</a></h4>
+							<p>The JSON encodable tokenizer object.</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="cleantext" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> clean<wbr>Text</h3>
+					<a name="tokenize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> tokenize</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">clean<wbr>Text<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">tokenize<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/tokenizer.ts#L18">packages/backend-ml/src/tokenizer.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/tokenizer.ts#L66">packages/backend-ml/src/tokenizer.ts:66</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts a string into an array of tokens.</p>
+								</div>
+								<p>The following rules are followed:</p>
+								<ul>
+									<li>Multiple spaces are collapsed into a single space.</li>
+									<li>Special characters are removed.</li>
+									<li>Numbers are replaced with a single token.</li>
+									<li>URLs are replaced with a single token.</li>
+									<li>Tokens are split at white space.</li>
+								</ul>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The raw string.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>An array of tokens.</p>
 						</li>
 					</ul>
 				</section>
@@ -317,24 +400,6 @@
 					<li class="current tsd-kind-module">
 						<a href="../modules/backend_ml.html" class="tsd-kind-icon">backend-<wbr>ml</a>
 						<ul>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_ml.enronparser.html" class="tsd-kind-icon">Enron<wbr>Parser</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_ml.invalidfileerror.html" class="tsd-kind-icon">Invalid<wbr>File<wbr>Error</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_ml.parser.html" class="tsd-kind-icon">Parser</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_ml.smsparser.html" class="tsd-kind-icon">Sms<wbr>Parser</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_ml.spamassasinparser.html" class="tsd-kind-icon">Spam<wbr>Assasin<wbr>Parser</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_ml.testingparser.html" class="tsd-kind-icon">Testing<wbr>Parser</a>
-							</li>
 							<li class="current tsd-kind-class tsd-parent-kind-module">
 								<a href="backend_ml.tokenizer.html" class="tsd-kind-icon">Tokenizer</a>
 								<ul>
@@ -360,75 +425,9 @@
 										<a href="backend_ml.tokenizer.html#tojson" class="tsd-kind-icon">toJSON</a>
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-										<a href="backend_ml.tokenizer.html#cleantext" class="tsd-kind-icon">clean<wbr>Text</a>
+										<a href="backend_ml.tokenizer.html#tokenize" class="tsd-kind-icon">tokenize</a>
 									</li>
 								</ul>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="../interfaces/backend_ml.config.html" class="tsd-kind-icon">Config</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="../interfaces/backend_ml.message.html" class="tsd-kind-icon">Message</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="../interfaces/backend_ml.sentencemapping.html" class="tsd-kind-icon">Sentence<wbr>Mapping</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="../interfaces/backend_ml.zipfileentry.html" class="tsd-kind-icon">Zip<wbr>File<wbr>Entry</a>
-							</li>
-							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#sequence" class="tsd-kind-icon">Sequence</a>
-							</li>
-							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#stringnumbermapping" class="tsd-kind-icon">String<wbr>Number<wbr>Mapping</a>
-							</li>
-							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#trainedmodelwithmeta" class="tsd-kind-icon">Trained<wbr>Model<wbr>With<wbr>Meta</a>
-							</li>
-							<li class=" tsd-kind-variable tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#constants" class="tsd-kind-icon">constants</a>
-							</li>
-							<li class=" tsd-kind-variable tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="../modules/backend_ml.html#arraytocsv" class="tsd-kind-icon">array<wbr>ToCsv</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#createdirectory" class="tsd-kind-icon">create<wbr>Directory</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#flattenmessages" class="tsd-kind-icon">flatten<wbr>Messages</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#getlabelstensor" class="tsd-kind-icon">get<wbr>Labels<wbr>Tensor</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#getmodel" class="tsd-kind-icon">get<wbr>Model</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#getsentencestensor" class="tsd-kind-icon">get<wbr>Sentences<wbr>Tensor</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#mergeparsers" class="tsd-kind-icon">merge<wbr>Parsers</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#ratiosplitmessages" class="tsd-kind-icon">ratio<wbr>Split<wbr>Messages</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#readzipfile" class="tsd-kind-icon">read<wbr>Zip<wbr>File</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#savemeta" class="tsd-kind-icon">save<wbr>Meta</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#savemodel" class="tsd-kind-icon">save<wbr>Model</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#testmodel" class="tsd-kind-icon">test<wbr>Model</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#trainmodels" class="tsd-kind-icon">train<wbr>Models</a>
 							</li>
 						</ul>
 					</li>

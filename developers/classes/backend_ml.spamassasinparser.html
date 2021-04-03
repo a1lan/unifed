@@ -66,6 +66,17 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Used for parsing the <code>data/spam-assasin.zip</code> file.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>internal</dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -94,7 +105,6 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="backend_ml.spamassasinparser.html#getbody" class="tsd-kind-icon">get<wbr>Body</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="backend_ml.spamassasinparser.html#getmessages" class="tsd-kind-icon">get<wbr>Messages</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="backend_ml.spamassasinparser.html#parse" class="tsd-kind-icon">parse</a></li>
 							</ul>
 						</section>
 					</div>
@@ -113,13 +123,17 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="backend_ml.parser.html">Parser</a>.<a href="backend_ml.parser.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/parsers/spam-assasin-parser.ts#L9">packages/backend-ml/src/parsers/spam-assasin-parser.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/parsers/spam-assasin-parser.ts#L15">packages/backend-ml/src/parsers/spam-assasin-parser.ts:15</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Path to the zip file containing
+										categorised spam/non-spam messages.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="backend_ml.spamassasinparser.html" class="tsd-signature-type" data-tsd-kind="Class">SpamAssasinParser</a></h4>
@@ -139,16 +153,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/parsers/spam-assasin-parser.ts#L14">packages/backend-ml/src/parsers/spam-assasin-parser.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/parsers/spam-assasin-parser.ts#L33">packages/backend-ml/src/parsers/spam-assasin-parser.ts:33</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Obtains the body of an email in the
+										<a href="https://tools.ietf.org/html/rfc822">MIME RFC 822</a>
+									format.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>data: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Email in the MIME RFC 822 format.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The body component of the email.</p>
 						</li>
 					</ul>
 				</section>
@@ -163,24 +188,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="backend_ml.parser.html">Parser</a>.<a href="backend_ml.parser.html#getmessages">getMessages</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/parsers/spam-assasin-parser.ts#L39">packages/backend-ml/src/parsers/spam-assasin-parser.ts:39</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/backend_ml.message.html" class="tsd-signature-type" data-tsd-kind="Interface">Message</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="parse" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parse</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">parse<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/backend_ml.message.html" class="tsd-signature-type" data-tsd-kind="Interface">Message</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/parsers/spam-assasin-parser.ts#L20">packages/backend-ml/src/parsers/spam-assasin-parser.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/parsers/spam-assasin-parser.ts#L39">packages/backend-ml/src/parsers/spam-assasin-parser.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/backend_ml.message.html" class="tsd-signature-type" data-tsd-kind="Interface">Message</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -240,18 +248,6 @@
 					<li class="current tsd-kind-module">
 						<a href="../modules/backend_ml.html" class="tsd-kind-icon">backend-<wbr>ml</a>
 						<ul>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_ml.enronparser.html" class="tsd-kind-icon">Enron<wbr>Parser</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_ml.invalidfileerror.html" class="tsd-kind-icon">Invalid<wbr>File<wbr>Error</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_ml.parser.html" class="tsd-kind-icon">Parser</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_ml.smsparser.html" class="tsd-kind-icon">Sms<wbr>Parser</a>
-							</li>
 							<li class="current tsd-kind-class tsd-parent-kind-module">
 								<a href="backend_ml.spamassasinparser.html" class="tsd-kind-icon">Spam<wbr>Assasin<wbr>Parser</a>
 								<ul>
@@ -264,82 +260,7 @@
 									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 										<a href="backend_ml.spamassasinparser.html#getmessages" class="tsd-kind-icon">get<wbr>Messages</a>
 									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-										<a href="backend_ml.spamassasinparser.html#parse" class="tsd-kind-icon">parse</a>
-									</li>
 								</ul>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_ml.testingparser.html" class="tsd-kind-icon">Testing<wbr>Parser</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_ml.tokenizer.html" class="tsd-kind-icon">Tokenizer</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="../interfaces/backend_ml.config.html" class="tsd-kind-icon">Config</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="../interfaces/backend_ml.message.html" class="tsd-kind-icon">Message</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="../interfaces/backend_ml.sentencemapping.html" class="tsd-kind-icon">Sentence<wbr>Mapping</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="../interfaces/backend_ml.zipfileentry.html" class="tsd-kind-icon">Zip<wbr>File<wbr>Entry</a>
-							</li>
-							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#sequence" class="tsd-kind-icon">Sequence</a>
-							</li>
-							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#stringnumbermapping" class="tsd-kind-icon">String<wbr>Number<wbr>Mapping</a>
-							</li>
-							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#trainedmodelwithmeta" class="tsd-kind-icon">Trained<wbr>Model<wbr>With<wbr>Meta</a>
-							</li>
-							<li class=" tsd-kind-variable tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#constants" class="tsd-kind-icon">constants</a>
-							</li>
-							<li class=" tsd-kind-variable tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="../modules/backend_ml.html#arraytocsv" class="tsd-kind-icon">array<wbr>ToCsv</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#createdirectory" class="tsd-kind-icon">create<wbr>Directory</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#flattenmessages" class="tsd-kind-icon">flatten<wbr>Messages</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#getlabelstensor" class="tsd-kind-icon">get<wbr>Labels<wbr>Tensor</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#getmodel" class="tsd-kind-icon">get<wbr>Model</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#getsentencestensor" class="tsd-kind-icon">get<wbr>Sentences<wbr>Tensor</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#mergeparsers" class="tsd-kind-icon">merge<wbr>Parsers</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#ratiosplitmessages" class="tsd-kind-icon">ratio<wbr>Split<wbr>Messages</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#readzipfile" class="tsd-kind-icon">read<wbr>Zip<wbr>File</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#savemeta" class="tsd-kind-icon">save<wbr>Meta</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#savemodel" class="tsd-kind-icon">save<wbr>Model</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#testmodel" class="tsd-kind-icon">test<wbr>Model</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#trainmodels" class="tsd-kind-icon">train<wbr>Models</a>
 							</li>
 						</ul>
 					</li>

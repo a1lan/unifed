@@ -66,6 +66,17 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Configuration used for training models.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>internal</dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -102,9 +113,17 @@
 					<div class="tsd-signature tsd-kind-icon">dropout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/config.ts#L13">packages/backend-ml/src/config.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/config.ts#L86">packages/backend-ml/src/config.ts:86</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The value to use for the
+								<a href="https://js.tensorflow.org/api/latest/#layers.dropout"><code>dropout</code></a>
+							layer, which is used to prevent over-fitting.</p>
+						</div>
+						<p>This must be a value greater than 0 and less than 1.</p>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="embeddingdimension" class="tsd-anchor"></a>
@@ -112,9 +131,16 @@
 					<div class="tsd-signature tsd-kind-icon">embedding<wbr>Dimension<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/config.ts#L8">packages/backend-ml/src/config.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/config.ts#L39">packages/backend-ml/src/config.ts:39</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The output dimension used for the embedding layer.</p>
+						</div>
+						<p>See <a href="https://js.tensorflow.org/api/latest/#layers.embedding">here</a>
+						for further details.</p>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="epochs" class="tsd-anchor"></a>
@@ -122,9 +148,19 @@
 					<div class="tsd-signature tsd-kind-icon">epochs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/config.ts#L10">packages/backend-ml/src/config.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/config.ts#L58">packages/backend-ml/src/config.ts:58</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The total number of iterations to use when training
+							a model.</p>
+						</div>
+						<p>The total number of iterations may be less
+							than this if the conditions for
+							<a href="https://js.tensorflow.org/api/latest/#callbacks.earlyStopping"><code>earlyStopping</code></a>
+						are met.</p>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="lstmunits" class="tsd-anchor"></a>
@@ -132,9 +168,17 @@
 					<div class="tsd-signature tsd-kind-icon">lstm<wbr>Units<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/config.ts#L12">packages/backend-ml/src/config.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/config.ts#L77">packages/backend-ml/src/config.ts:77</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The number of units to remember in the Long-Short Term
+							Memory layer.</p>
+						</div>
+						<p>See <a href="https://js.tensorflow.org/api/latest/#layers.lstm"><code>ltsm</code></a>
+						for more details..</p>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="maxsequencelength" class="tsd-anchor"></a>
@@ -142,9 +186,18 @@
 					<div class="tsd-signature tsd-kind-icon">max<wbr>Sequence<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/config.ts#L7">packages/backend-ml/src/config.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/config.ts#L31">packages/backend-ml/src/config.ts:31</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The maximum sequence length.</p>
+						</div>
+						<p>This value corresponds to the length that each
+						sequence is normalised to.</p>
+						<p>Larger values are better, but take longer to
+						train and use more memory.</p>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="patience" class="tsd-anchor"></a>
@@ -152,9 +205,17 @@
 					<div class="tsd-signature tsd-kind-icon">patience<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/config.ts#L11">packages/backend-ml/src/config.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/config.ts#L67">packages/backend-ml/src/config.ts:67</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Number of epochs with no improvement after which
+							training will be stopped.</p>
+						</div>
+						<p>See <a href="https://js.tensorflow.org/api/latest/#callbacks.earlyStopping"><code>earlyStopping</code></a>
+						for more details.</p>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="trainingratio" class="tsd-anchor"></a>
@@ -162,9 +223,16 @@
 					<div class="tsd-signature tsd-kind-icon">training<wbr>Ratio<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/config.ts#L9">packages/backend-ml/src/config.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/config.ts#L47">packages/backend-ml/src/config.ts:47</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The ratio of messages to split between training and
+							validation.</p>
+						</div>
+						<p>This must be a value greater than 0 and less than 1.</p>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="vocabsize" class="tsd-anchor"></a>
@@ -172,9 +240,18 @@
 					<div class="tsd-signature tsd-kind-icon">vocab<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/86f7067/packages/backend-ml/src/config.ts#L6">packages/backend-ml/src/config.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6221127/packages/backend-ml/src/config.ts#L20">packages/backend-ml/src/config.ts:20</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The maximum vocabulary size.</p>
+						</div>
+						<p>This value corresponds to the maximum number of
+						distinct symbols (usually words) stored.</p>
+						<p>Larger values are better, but take longer to
+						train and use more memory.</p>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -229,27 +306,6 @@
 					<li class="current tsd-kind-module">
 						<a href="../modules/backend_ml.html" class="tsd-kind-icon">backend-<wbr>ml</a>
 						<ul>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/backend_ml.enronparser.html" class="tsd-kind-icon">Enron<wbr>Parser</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/backend_ml.invalidfileerror.html" class="tsd-kind-icon">Invalid<wbr>File<wbr>Error</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/backend_ml.parser.html" class="tsd-kind-icon">Parser</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/backend_ml.smsparser.html" class="tsd-kind-icon">Sms<wbr>Parser</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/backend_ml.spamassasinparser.html" class="tsd-kind-icon">Spam<wbr>Assasin<wbr>Parser</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/backend_ml.testingparser.html" class="tsd-kind-icon">Testing<wbr>Parser</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/backend_ml.tokenizer.html" class="tsd-kind-icon">Tokenizer</a>
-							</li>
 							<li class="current tsd-kind-interface tsd-parent-kind-module">
 								<a href="backend_ml.config.html" class="tsd-kind-icon">Config</a>
 								<ul>
@@ -278,69 +334,6 @@
 										<a href="backend_ml.config.html#vocabsize" class="tsd-kind-icon">vocab<wbr>Size</a>
 									</li>
 								</ul>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="backend_ml.message.html" class="tsd-kind-icon">Message</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="backend_ml.sentencemapping.html" class="tsd-kind-icon">Sentence<wbr>Mapping</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="backend_ml.zipfileentry.html" class="tsd-kind-icon">Zip<wbr>File<wbr>Entry</a>
-							</li>
-							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#sequence" class="tsd-kind-icon">Sequence</a>
-							</li>
-							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#stringnumbermapping" class="tsd-kind-icon">String<wbr>Number<wbr>Mapping</a>
-							</li>
-							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#trainedmodelwithmeta" class="tsd-kind-icon">Trained<wbr>Model<wbr>With<wbr>Meta</a>
-							</li>
-							<li class=" tsd-kind-variable tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#constants" class="tsd-kind-icon">constants</a>
-							</li>
-							<li class=" tsd-kind-variable tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="../modules/backend_ml.html#arraytocsv" class="tsd-kind-icon">array<wbr>ToCsv</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#createdirectory" class="tsd-kind-icon">create<wbr>Directory</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#flattenmessages" class="tsd-kind-icon">flatten<wbr>Messages</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#getlabelstensor" class="tsd-kind-icon">get<wbr>Labels<wbr>Tensor</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#getmodel" class="tsd-kind-icon">get<wbr>Model</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#getsentencestensor" class="tsd-kind-icon">get<wbr>Sentences<wbr>Tensor</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#mergeparsers" class="tsd-kind-icon">merge<wbr>Parsers</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#ratiosplitmessages" class="tsd-kind-icon">ratio<wbr>Split<wbr>Messages</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#readzipfile" class="tsd-kind-icon">read<wbr>Zip<wbr>File</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#savemeta" class="tsd-kind-icon">save<wbr>Meta</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#savemodel" class="tsd-kind-icon">save<wbr>Model</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#testmodel" class="tsd-kind-icon">test<wbr>Model</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/backend_ml.html#trainmodels" class="tsd-kind-icon">train<wbr>Models</a>
 							</li>
 						</ul>
 					</li>
