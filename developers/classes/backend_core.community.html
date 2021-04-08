@@ -66,6 +66,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Entity representing a community.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -144,9 +151,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="backend_core.base.html">Base</a>.<a href="backend_core.base.html#_id">_id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/789c1f4/packages/backend-core/src/models/base.ts#L16">packages/backend-core/src/models/base.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6a2a759/packages/backend-core/src/models/base.ts#L29">packages/backend-core/src/models/base.ts:29</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The ID (primary key) of the entity.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="admins" class="tsd-anchor"></a>
@@ -154,9 +166,14 @@
 					<div class="tsd-signature tsd-kind-icon">admins<span class="tsd-signature-symbol">:</span> <a href="backend_core.remotereference.html" class="tsd-signature-type" data-tsd-kind="Class">RemoteReference</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/789c1f4/packages/backend-core/src/models/community.ts#L52">packages/backend-core/src/models/community.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6a2a759/packages/backend-core/src/models/community.ts#L68">packages/backend-core/src/models/community.ts:68</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Administrators of the community.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="description" class="tsd-anchor"></a>
@@ -164,9 +181,14 @@
 					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/789c1f4/packages/backend-core/src/models/community.ts#L36">packages/backend-core/src/models/community.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6a2a759/packages/backend-core/src/models/community.ts#L46">packages/backend-core/src/models/community.ts:46</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Description of the community.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="host" class="tsd-anchor"></a>
@@ -175,9 +197,17 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="backend_core.base.html">Base</a>.<a href="backend_core.base.html#host">host</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/789c1f4/packages/backend-core/src/models/base.ts#L19">packages/backend-core/src/models/base.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6a2a759/packages/backend-core/src/models/base.ts#L39">packages/backend-core/src/models/base.ts:39</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Host that the entity belongs to.</p>
+						</div>
+						<p>Because this is a federated system, there are many
+							instances where entities are scoped to a specific
+						instance (rather than globally scoped).</p>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="posts" class="tsd-anchor"></a>
@@ -185,9 +215,14 @@
 					<div class="tsd-signature tsd-kind-icon">posts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Ref</span><span class="tsd-signature-symbol">&lt;</span><a href="backend_core.post.html" class="tsd-signature-type" data-tsd-kind="Class">Post</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/789c1f4/packages/backend-core/src/models/community.ts#L45">packages/backend-core/src/models/community.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6a2a759/packages/backend-core/src/models/community.ts#L58">packages/backend-core/src/models/community.ts:58</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Posts belonging to the community.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="title" class="tsd-anchor"></a>
@@ -195,9 +230,14 @@
 					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/789c1f4/packages/backend-core/src/models/community.ts#L25">packages/backend-core/src/models/community.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6a2a759/packages/backend-core/src/models/community.ts#L32">packages/backend-core/src/models/community.ts:32</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Title of the community.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -213,17 +253,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/789c1f4/packages/backend-core/src/models/base.ts#L30">packages/backend-core/src/models/base.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6a2a759/packages/backend-core/src/models/base.ts#L56">packages/backend-core/src/models/base.ts:56</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Access to <code>createdAt</code> as a UNIX timestamp.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/789c1f4/packages/backend-core/src/models/base.ts#L34">packages/backend-core/src/models/base.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6a2a759/packages/backend-core/src/models/base.ts#L60">packages/backend-core/src/models/base.ts:60</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Access to <code>createdAt</code> as a UNIX timestamp.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -245,17 +295,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/789c1f4/packages/backend-core/src/models/base.ts#L22">packages/backend-core/src/models/base.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6a2a759/packages/backend-core/src/models/base.ts#L45">packages/backend-core/src/models/base.ts:45</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Alias for the <code>_id</code> property.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/789c1f4/packages/backend-core/src/models/base.ts#L26">packages/backend-core/src/models/base.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6a2a759/packages/backend-core/src/models/base.ts#L49">packages/backend-core/src/models/base.ts:49</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Alias for the <code>_id</code> property.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -277,17 +337,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/789c1f4/packages/backend-core/src/models/base.ts#L38">packages/backend-core/src/models/base.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6a2a759/packages/backend-core/src/models/base.ts#L67">packages/backend-core/src/models/base.ts:67</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Access to <code>updatedAt</code> as a UNIX timestamp.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/789c1f4/packages/backend-core/src/models/base.ts#L42">packages/backend-core/src/models/base.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6a2a759/packages/backend-core/src/models/base.ts#L71">packages/backend-core/src/models/base.ts:71</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Access to <code>updatedAt</code> as a UNIX timestamp.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -312,9 +382,16 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="backend_core.base.html">Base</a>.<a href="backend_core.base.html#tojson">toJSON</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/789c1f4/packages/backend-core/src/models/community.ts#L54">packages/backend-core/src/models/community.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6a2a759/packages/backend-core/src/models/community.ts#L75">packages/backend-core/src/models/community.ts:75</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a JSON representation of the entity
+										in the format expected by the federation
+									protocol.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/backend_core.jsonmap.html" class="tsd-signature-type" data-tsd-kind="Interface">JSONMap</a></h4>
 						</li>
 					</ul>
@@ -402,6 +479,12 @@
 								</ul>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="backend_core.envvarnotdefinederror.html" class="tsd-kind-icon">Env<wbr>Var<wbr>Not<wbr>Defined<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="backend_core.envvarnotinteger.html" class="tsd-kind-icon">Env<wbr>Var<wbr>Not<wbr>Integer</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
 								<a href="backend_core.invalidpostbodyformaterror.html" class="tsd-kind-icon">Invalid<wbr>Post<wbr>Body<wbr>Format<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
@@ -428,11 +511,20 @@
 							<li class=" tsd-kind-interface tsd-parent-kind-module">
 								<a href="../interfaces/backend_core.jsonmap.html" class="tsd-kind-icon">JSONMap</a>
 							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-module">
+								<a href="../interfaces/backend_core.tojson.html" class="tsd-kind-icon">toJSON</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+								<a href="../modules/backend_core.html#anyjson" class="tsd-kind-icon">AnyJSON</a>
+							</li>
 							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 								<a href="../modules/backend_core.html#entityid" class="tsd-kind-icon">EntityID</a>
 							</li>
 							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 								<a href="../modules/backend_core.html#jsonarray" class="tsd-kind-icon">JSONArray</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+								<a href="../modules/backend_core.html#postcontent" class="tsd-kind-icon">Post<wbr>Content</a>
 							</li>
 							<li class=" tsd-kind-variable tsd-parent-kind-module">
 								<a href="../modules/backend_core.html#communitymodel" class="tsd-kind-icon">Community<wbr>Model</a>

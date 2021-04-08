@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>UserProfile | Unifed Developer Documentation</title>
+	<title>toJSON | Unifed Developer Documentation</title>
 	<meta name="description" content="Documentation for Unifed Developer Documentation">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../modules/backend_core.html">backend-core</a>
 				</li>
 				<li>
-					<a href="backend_core.userprofile.html">UserProfile</a>
+					<a href="backend_core.tojson.html">toJSON</a>
 				</li>
 			</ul>
-			<h1>Class UserProfile</h1>
+			<h1>Interface toJSON</h1>
 		</div>
 	</div>
 </header>
@@ -69,19 +69,15 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Entity representing a user&#39;s profile.</p>
+						<p>Any object with a <code>toJSON</code> method.</p>
 					</div>
-					<dl class="tsd-comment-tags">
-						<dt>internal</dt>
-						<dd></dd>
-					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">UserProfile</span>
+						<span class="target">toJSON</span>
 					</li>
 				</ul>
 			</section>
@@ -90,74 +86,40 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="backend_core.userprofile.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="backend_core.userprofile.html#name" class="tsd-kind-icon">name</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_core.userprofile.html#tojson" class="tsd-kind-icon">toJSON</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="backend_core.tojson.html#tojson" class="tsd-kind-icon">toJSON</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>User<wbr>Profile<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="backend_core.userprofile.html" class="tsd-signature-type" data-tsd-kind="Class">UserProfile</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="backend_core.userprofile.html" class="tsd-signature-type" data-tsd-kind="Class">UserProfile</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6a2a759/packages/backend-core/src/models/public-user.ts#L21">packages/backend-core/src/models/public-user.ts:21</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="tojson" class="tsd-anchor"></a>
 					<h3>toJSON</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/backend_core.jsonmap.html" class="tsd-signature-type" data-tsd-kind="Interface">JSONMap</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6a2a759/packages/backend-core/src/models/public-user.ts#L23">packages/backend-core/src/models/public-user.ts:23</a></li>
+					<div class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="backend_core.jsonmap.html" class="tsd-signature-type" data-tsd-kind="Interface">JSONMap</a><span class="tsd-signature-symbol"> | </span><a href="../modules/backend_core.html#jsonarray" class="tsd-signature-type" data-tsd-kind="Type alias">JSONArray</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/kiancross/unifed/blob/6a2a759/packages/backend-core/src/types.ts#L17">packages/backend-core/src/types.ts:17</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="backend_core.jsonmap.html" class="tsd-signature-type" data-tsd-kind="Interface">JSONMap</a><span class="tsd-signature-symbol"> | </span><a href="../modules/backend_core.html#jsonarray" class="tsd-signature-type" data-tsd-kind="Type alias">JSONArray</a></li>
 								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/backend_core.jsonmap.html" class="tsd-signature-type" data-tsd-kind="Interface">JSONMap</a></h4>
-						</li>
-					</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="backend_core.jsonmap.html" class="tsd-signature-type" data-tsd-kind="Interface">JSONMap</a><span class="tsd-signature-symbol"> | </span><a href="../modules/backend_core.html#jsonarray" class="tsd-signature-type" data-tsd-kind="Type alias">JSONArray</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -201,57 +163,51 @@
 						<a href="../modules/backend_core.html" class="tsd-kind-icon">backend-<wbr>core</a>
 						<ul>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_core.base.html" class="tsd-kind-icon">Base</a>
+								<a href="../classes/backend_core.base.html" class="tsd-kind-icon">Base</a>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_core.community.html" class="tsd-kind-icon">Community</a>
+								<a href="../classes/backend_core.community.html" class="tsd-kind-icon">Community</a>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_core.envvarnotdefinederror.html" class="tsd-kind-icon">Env<wbr>Var<wbr>Not<wbr>Defined<wbr>Error</a>
+								<a href="../classes/backend_core.envvarnotdefinederror.html" class="tsd-kind-icon">Env<wbr>Var<wbr>Not<wbr>Defined<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_core.envvarnotinteger.html" class="tsd-kind-icon">Env<wbr>Var<wbr>Not<wbr>Integer</a>
+								<a href="../classes/backend_core.envvarnotinteger.html" class="tsd-kind-icon">Env<wbr>Var<wbr>Not<wbr>Integer</a>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_core.invalidpostbodyformaterror.html" class="tsd-kind-icon">Invalid<wbr>Post<wbr>Body<wbr>Format<wbr>Error</a>
+								<a href="../classes/backend_core.invalidpostbodyformaterror.html" class="tsd-kind-icon">Invalid<wbr>Post<wbr>Body<wbr>Format<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_core.invalidpostbodytypeerror.html" class="tsd-kind-icon">Invalid<wbr>Post<wbr>Body<wbr>Type<wbr>Error</a>
+								<a href="../classes/backend_core.invalidpostbodytypeerror.html" class="tsd-kind-icon">Invalid<wbr>Post<wbr>Body<wbr>Type<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_core.post.html" class="tsd-kind-icon">Post</a>
+								<a href="../classes/backend_core.post.html" class="tsd-kind-icon">Post</a>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_core.publicuser.html" class="tsd-kind-icon">Public<wbr>User</a>
+								<a href="../classes/backend_core.publicuser.html" class="tsd-kind-icon">Public<wbr>User</a>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_core.remotereference.html" class="tsd-kind-icon">Remote<wbr>Reference</a>
+								<a href="../classes/backend_core.remotereference.html" class="tsd-kind-icon">Remote<wbr>Reference</a>
 							</li>
 							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_core.user.html" class="tsd-kind-icon">User</a>
+								<a href="../classes/backend_core.user.html" class="tsd-kind-icon">User</a>
 							</li>
-							<li class="current tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_core.userprofile.html" class="tsd-kind-icon">User<wbr>Profile</a>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="../classes/backend_core.userprofile.html" class="tsd-kind-icon">User<wbr>Profile</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="../classes/backend_core.config.html" class="tsd-kind-icon">config</a>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-module">
+								<a href="backend_core.jsonmap.html" class="tsd-kind-icon">JSONMap</a>
+							</li>
+							<li class="current tsd-kind-interface tsd-parent-kind-module">
+								<a href="backend_core.tojson.html" class="tsd-kind-icon">toJSON</a>
 								<ul>
-									<li class=" tsd-kind-constructor tsd-parent-kind-class">
-										<a href="backend_core.userprofile.html#constructor" class="tsd-kind-icon">constructor</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-class">
-										<a href="backend_core.userprofile.html#name" class="tsd-kind-icon">name</a>
-									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="backend_core.userprofile.html#tojson" class="tsd-kind-icon">toJSON</a>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="backend_core.tojson.html#tojson" class="tsd-kind-icon">toJSON</a>
 									</li>
 								</ul>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="backend_core.config.html" class="tsd-kind-icon">config</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="../interfaces/backend_core.jsonmap.html" class="tsd-kind-icon">JSONMap</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="../interfaces/backend_core.tojson.html" class="tsd-kind-icon">toJSON</a>
 							</li>
 							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 								<a href="../modules/backend_core.html#anyjson" class="tsd-kind-icon">AnyJSON</a>
@@ -324,13 +280,6 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -338,6 +287,11 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 			</ul>
 		</div>
 	</div>
