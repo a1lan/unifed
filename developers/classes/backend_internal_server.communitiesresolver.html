@@ -116,7 +116,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/communities.ts#L28">packages/backend-internal-server/src/resolvers/communities.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/communities.ts#L28">packages/backend-internal-server/src/resolvers/communities.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -145,7 +145,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/communities.ts#L61">packages/backend-internal-server/src/resolvers/communities.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/communities.ts#L61">packages/backend-internal-server/src/resolvers/communities.ts:61</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -183,7 +183,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/communities.ts#L53">packages/backend-internal-server/src/resolvers/communities.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/communities.ts#L53">packages/backend-internal-server/src/resolvers/communities.ts:53</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -209,25 +209,47 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/communities.ts#L84">packages/backend-internal-server/src/resolvers/communities.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/communities.ts#L99">packages/backend-internal-server/src/resolvers/communities.ts:99</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Allows a user to create a community to moderate.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>ID of the new community to make.</p>
+									</div>
 								</li>
 								<li>
 									<h5>title: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Title of the new community.</p>
+									</div>
 								</li>
 								<li>
 									<h5>description: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Description of the new community.</p>
+									</div>
 								</li>
 								<li>
 									<h5>user: <span class="tsd-signature-type">User</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Currently logged in user.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>True on success.</p>
 						</li>
 					</ul>
 				</section>
@@ -241,16 +263,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/communities.ts#L94">packages/backend-internal-server/src/resolvers/communities.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/communities.ts#L118">packages/backend-internal-server/src/resolvers/communities.ts:118</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches the communities available at a host.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>host: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The host server to search</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Community</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An array of communities.</p>
 						</li>
 					</ul>
 				</section>
@@ -264,16 +299,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/communities.ts#L99">packages/backend-internal-server/src/resolvers/communities.ts:99</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/communities.ts#L132">packages/backend-internal-server/src/resolvers/communities.ts:132</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a community on the federated network.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>community: <a href="backend_internal_server.remotereferenceinput.html" class="tsd-signature-type" data-tsd-kind="Class">RemoteReferenceInput</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Reference to the community.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Community</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The community if it exists.</p>
 						</li>
 					</ul>
 				</section>
@@ -288,7 +336,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of ResolverInterface.posts</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/communities.ts#L104">packages/backend-internal-server/src/resolvers/communities.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/communities.ts#L137">packages/backend-internal-server/src/resolvers/communities.ts:137</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>

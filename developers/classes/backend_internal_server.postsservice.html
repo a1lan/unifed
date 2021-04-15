@@ -137,19 +137,36 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/posts.ts#L54">packages/backend-internal-server/src/services/posts.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/services/posts.ts#L110">packages/backend-internal-server/src/services/posts.ts:110</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Allows an admin to delete a post. Also removes the reference to the post.
+									for the author if they are a local user.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>username: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Username of user deleting post.</p>
+									</div>
 								</li>
 								<li>
 									<h5>postId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ID of the post.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>True on success.</p>
 						</li>
 					</ul>
 				</section>
@@ -163,19 +180,35 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/posts.ts#L47">packages/backend-internal-server/src/services/posts.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/services/posts.ts#L91">packages/backend-internal-server/src/services/posts.ts:91</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Allows an admin to approve a post.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>username: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Username of user approving.</p>
+									</div>
 								</li>
 								<li>
 									<h5>postId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ID of the post.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>True on success.</p>
 						</li>
 					</ul>
 				</section>
@@ -190,22 +223,41 @@
 							<aside class="tsd-sources">
 								<p>Overrides PostsFederationService.create</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/posts.ts#L20">packages/backend-internal-server/src/services/posts.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/services/posts.ts#L33">packages/backend-internal-server/src/services/posts.ts:33</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a post at a specified host.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>username: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Local user making the post.</p>
+									</div>
 								</li>
 								<li>
 									<h5>host: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The host server the post is made on.</p>
+									</div>
 								</li>
 								<li>
 									<h5>post: <span class="tsd-signature-type">CreatePostProps</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The post being made.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Post</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The created post.</p>
 						</li>
 					</ul>
 				</section>
@@ -220,19 +272,37 @@
 							<aside class="tsd-sources">
 								<p>Overrides PostsFederationService.delete</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/posts.ts#L32">packages/backend-internal-server/src/services/posts.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/services/posts.ts#L56">packages/backend-internal-server/src/services/posts.ts:56</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Deletes a post at a specified host.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>username: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>User deleting the post.</p>
+									</div>
 								</li>
 								<li>
 									<h5>host: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The host server the post is on.</p>
+									</div>
 								</li>
 								<li>
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The id of the post on the federated network.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -339,16 +409,30 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/posts.ts#L87">packages/backend-internal-server/src/services/posts.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/services/posts.ts#L165">packages/backend-internal-server/src/services/posts.ts:165</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches the unfiltered version of the posts for community admins.
+									Unfiltered posts won&#39;t hide the contents of their title and body.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>community: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The community to fetch posts from.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Post</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Unfiltered posts.</p>
 						</li>
 					</ul>
 				</section>
@@ -362,19 +446,36 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/posts.ts#L69">packages/backend-internal-server/src/services/posts.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/services/posts.ts#L137">packages/backend-internal-server/src/services/posts.ts:137</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if the username belongs to an admin of the community the
+									post was created on.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>username: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>User to check.</p>
+									</div>
 								</li>
 								<li>
 									<h5>post: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Post</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Post to check.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>True if the user is an admin of the post&#39;s community.</p>
 						</li>
 					</ul>
 				</section>
@@ -388,16 +489,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/posts.ts#L42">packages/backend-internal-server/src/services/posts.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/services/posts.ts#L75">packages/backend-internal-server/src/services/posts.ts:75</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the approved flag to false on a post.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ID of the post.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>True on success.</p>
 						</li>
 					</ul>
 				</section>

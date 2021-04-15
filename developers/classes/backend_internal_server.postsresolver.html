@@ -123,7 +123,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/posts.ts#L24">packages/backend-internal-server/src/resolvers/posts.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/posts.ts#L24">packages/backend-internal-server/src/resolvers/posts.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -155,19 +155,35 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/posts.ts#L93">packages/backend-internal-server/src/resolvers/posts.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/posts.ts#L161">packages/backend-internal-server/src/resolvers/posts.ts:161</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Allows administrators to set the approved flag on the provided posts to true.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>user: <span class="tsd-signature-type">User</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The admin making the approval.</p>
+									</div>
 								</li>
 								<li>
 									<h5>posts: <a href="backend_internal_server.remotereferenceinput.html" class="tsd-signature-type" data-tsd-kind="Class">RemoteReferenceInput</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Array of post references to approve.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Returns true once the provided posts are approved.</p>
 						</li>
 					</ul>
 				</section>
@@ -182,7 +198,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of ResolverInterface.children</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/posts.ts#L153">packages/backend-internal-server/src/resolvers/posts.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/posts.ts#L263">packages/backend-internal-server/src/resolvers/posts.ts:263</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -209,7 +225,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of ResolverInterface.community</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/posts.ts#L183">packages/backend-internal-server/src/resolvers/posts.ts:183</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/posts.ts#L293">packages/backend-internal-server/src/resolvers/posts.ts:293</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -232,19 +248,35 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/posts.ts#L33">packages/backend-internal-server/src/resolvers/posts.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/posts.ts#L44">packages/backend-internal-server/src/resolvers/posts.ts:44</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Allows a user to create a new post.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>post: <a href="backend_internal_server.createpostinput.html" class="tsd-signature-type" data-tsd-kind="Class">CreatePostInput</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new post to make.</p>
+									</div>
 								</li>
 								<li>
 									<h5>user: <span class="tsd-signature-type">User</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Currently logged in user.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Post</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The newly created post.</p>
 						</li>
 					</ul>
 				</section>
@@ -258,19 +290,36 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/posts.ts#L47">packages/backend-internal-server/src/resolvers/posts.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/posts.ts#L70">packages/backend-internal-server/src/resolvers/posts.ts:70</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Allows the author of a post or an admin of the community the post was made on to delete
+									the post.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>post: <a href="backend_internal_server.remotereferenceinput.html" class="tsd-signature-type" data-tsd-kind="Class">RemoteReferenceInput</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Reference to the post on the federated network.</p>
+									</div>
 								</li>
 								<li>
 									<h5>user: <span class="tsd-signature-type">User</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Currently logged in user.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>True once the call is made.</p>
 						</li>
 					</ul>
 				</section>
@@ -284,19 +333,35 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/posts.ts#L108">packages/backend-internal-server/src/resolvers/posts.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/posts.ts#L187">packages/backend-internal-server/src/resolvers/posts.ts:187</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Allows administrators to delete an array of posts.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>user: <span class="tsd-signature-type">User</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The admin deleting the posts.</p>
+									</div>
 								</li>
 								<li>
 									<h5>posts: <a href="backend_internal_server.remotereferenceinput.html" class="tsd-signature-type" data-tsd-kind="Class">RemoteReferenceInput</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Array of post references to delete.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Returns true once the provided posts are deleted.</p>
 						</li>
 					</ul>
 				</section>
@@ -310,19 +375,35 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/posts.ts#L148">packages/backend-internal-server/src/resolvers/posts.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/posts.ts#L258">packages/backend-internal-server/src/resolvers/posts.ts:258</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a post from the federated network.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>post: <a href="backend_internal_server.remotereferenceinput.html" class="tsd-signature-type" data-tsd-kind="Class">RemoteReferenceInput</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Post to fetch.</p>
+									</div>
 								</li>
 								<li>
 									<h5>user: <span class="tsd-signature-type">User</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The currently logged in user.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Post</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Object representing the post.</p>
 						</li>
 					</ul>
 				</section>
@@ -336,19 +417,35 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/posts.ts#L136">packages/backend-internal-server/src/resolvers/posts.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/posts.ts#L235">packages/backend-internal-server/src/resolvers/posts.ts:235</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches all the posts from a community.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>community: <a href="backend_internal_server.remotereferenceinput.html" class="tsd-signature-type" data-tsd-kind="Class">RemoteReferenceInput</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Community to fetch posts from.</p>
+									</div>
 								</li>
 								<li>
 									<h5>user: <span class="tsd-signature-type">User</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The currently logged in user.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Post</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Array of posts.</p>
 						</li>
 					</ul>
 				</section>
@@ -362,16 +459,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/posts.ts#L81">packages/backend-internal-server/src/resolvers/posts.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/posts.ts#L138">packages/backend-internal-server/src/resolvers/posts.ts:138</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches the list of posts from communities the user is subscribed to.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>user: <span class="tsd-signature-type">User</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The currently logged in user.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Post</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Array of posts.</p>
 						</li>
 					</ul>
 				</section>
@@ -385,16 +495,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/posts.ts#L120">packages/backend-internal-server/src/resolvers/posts.ts:120</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/posts.ts#L208">packages/backend-internal-server/src/resolvers/posts.ts:208</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches an array of unapproved posts from communities the user moderates (is an admin in).</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>user: <span class="tsd-signature-type">User</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A community administrator.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Post</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Array of of unapproved posts.</p>
 						</li>
 					</ul>
 				</section>
@@ -409,7 +532,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of ResolverInterface.parentPost</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/posts.ts#L198">packages/backend-internal-server/src/resolvers/posts.ts:198</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/posts.ts#L308">packages/backend-internal-server/src/resolvers/posts.ts:308</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -435,16 +558,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/posts.ts#L72">packages/backend-internal-server/src/resolvers/posts.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/posts.ts#L120">packages/backend-internal-server/src/resolvers/posts.ts:120</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Allows a user to report a post and set its approved flag to false.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>post: <a href="backend_internal_server.remotereferenceinput.html" class="tsd-signature-type" data-tsd-kind="Class">RemoteReferenceInput</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The post to report</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>True on report success.</p>
 						</li>
 					</ul>
 				</section>
@@ -458,25 +594,48 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/posts.ts#L57">packages/backend-internal-server/src/resolvers/posts.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/resolvers/posts.ts#L96">packages/backend-internal-server/src/resolvers/posts.ts:96</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Allows the author of a post or an admin of the community the post was made on to update
+									the content of the post.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>post: <a href="backend_internal_server.remotereferenceinput.html" class="tsd-signature-type" data-tsd-kind="Class">RemoteReferenceInput</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Reference to the post in the federated network.</p>
+									</div>
 								</li>
 								<li>
 									<h5>body: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new body of the post.</p>
+									</div>
 								</li>
 								<li>
 									<h5>user: <span class="tsd-signature-type">User</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Currently logged in user.</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> title: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new title of the post.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Post</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The updated post.</p>
 						</li>
 					</ul>
 				</section>

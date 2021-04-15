@@ -126,16 +126,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/users.ts#L61">packages/backend-internal-server/src/services/users.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/services/users.ts#L107">packages/backend-internal-server/src/services/users.ts:107</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches all the posts made by a user.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>username: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Username of the user.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RemoteReference</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Array of posts. Empty array if the user does not exist.</p>
 						</li>
 					</ul>
 				</section>
@@ -149,16 +162,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/users.ts#L53">packages/backend-internal-server/src/services/users.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/services/users.ts#L90">packages/backend-internal-server/src/services/users.ts:90</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches an array of references to the communities a user is subscribed to.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>ID of the user.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RemoteReference</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Array of subscribed communities. Empty array if the user does not exist.</p>
 						</li>
 					</ul>
 				</section>
@@ -172,22 +198,42 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/users.ts#L19">packages/backend-internal-server/src/services/users.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/services/users.ts#L33">packages/backend-internal-server/src/services/users.ts:33</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Allows a user to subscribe to a community. Adds a reference to the subscribed
+									community for the user.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>userId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The user subscribing.</p>
+									</div>
 								</li>
 								<li>
 									<h5>host: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The host of the community.</p>
+									</div>
 								</li>
 								<li>
 									<h5>communityId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The id of the community on the federated network.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>True on success.</p>
 						</li>
 					</ul>
 				</section>
@@ -201,22 +247,42 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/users.ts#L36">packages/backend-internal-server/src/services/users.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/services/users.ts#L64">packages/backend-internal-server/src/services/users.ts:64</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Allows a user to unsubscribe from a community. If there is an existing
+									reference to the community, it is removed.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>userId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>ID of the user.</p>
+									</div>
 								</li>
 								<li>
 									<h5>host: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The server hosting the community.</p>
+									</div>
 								</li>
 								<li>
 									<h5>communityId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The id of the community on the federated network.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>True on success.</p>
 						</li>
 					</ul>
 				</section>
@@ -230,7 +296,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/users.ts#L11">packages/backend-internal-server/src/services/users.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/551cd16/packages/backend-internal-server/src/services/users.ts#L11">packages/backend-internal-server/src/services/users.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
