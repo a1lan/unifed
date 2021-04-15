@@ -87,6 +87,7 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_internal_server.usersservice.html#getallposts" class="tsd-kind-icon">get<wbr>All<wbr>Posts</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_internal_server.usersservice.html#getsubscriptions" class="tsd-kind-icon">get<wbr>Subscriptions</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_internal_server.usersservice.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_internal_server.usersservice.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a></li>
@@ -116,6 +117,29 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getallposts" class="tsd-anchor"></a>
+					<h3>get<wbr>All<wbr>Posts</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Posts<span class="tsd-signature-symbol">(</span>username<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RemoteReference</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/users.ts#L61">packages/backend-internal-server/src/services/users.ts:61</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>username: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RemoteReference</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getsubscriptions" class="tsd-anchor"></a>
 					<h3>get<wbr>Subscriptions</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -125,7 +149,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/services/users.ts#L50">packages/backend-internal-server/src/services/users.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/users.ts#L53">packages/backend-internal-server/src/services/users.ts:53</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -148,7 +172,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/services/users.ts#L16">packages/backend-internal-server/src/services/users.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/users.ts#L19">packages/backend-internal-server/src/services/users.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -177,7 +201,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/services/users.ts#L33">packages/backend-internal-server/src/services/users.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/users.ts#L36">packages/backend-internal-server/src/services/users.ts:36</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -200,13 +224,13 @@
 					<a name="updateprofile" class="tsd-anchor"></a>
 					<h3>update<wbr>Profile</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Profile<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, profile<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Profile<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/services/users.ts#L11">packages/backend-internal-server/src/services/users.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/users.ts#L11">packages/backend-internal-server/src/services/users.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -215,12 +239,7 @@
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>profile: <span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-										</li>
-									</ul>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -318,6 +337,9 @@
 								<ul>
 									<li class=" tsd-kind-constructor tsd-parent-kind-class">
 										<a href="backend_internal_server.usersservice.html#constructor" class="tsd-kind-icon">constructor</a>
+									</li>
+									<li class=" tsd-kind-method tsd-parent-kind-class">
+										<a href="backend_internal_server.usersservice.html#getallposts" class="tsd-kind-icon">get<wbr>All<wbr>Posts</a>
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-class">
 										<a href="backend_internal_server.usersservice.html#getsubscriptions" class="tsd-kind-icon">get<wbr>Subscriptions</a>

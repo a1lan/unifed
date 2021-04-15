@@ -137,7 +137,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/services/posts.ts#L54">packages/backend-internal-server/src/services/posts.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/posts.ts#L54">packages/backend-internal-server/src/services/posts.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -163,7 +163,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/services/posts.ts#L47">packages/backend-internal-server/src/services/posts.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/posts.ts#L47">packages/backend-internal-server/src/services/posts.ts:47</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -190,7 +190,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides PostsFederationService.create</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/services/posts.ts#L20">packages/backend-internal-server/src/services/posts.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/posts.ts#L20">packages/backend-internal-server/src/services/posts.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -220,7 +220,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides PostsFederationService.delete</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/services/posts.ts#L32">packages/backend-internal-server/src/services/posts.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/posts.ts#L32">packages/backend-internal-server/src/services/posts.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -250,22 +250,37 @@
 							<aside class="tsd-sources">
 								<p>Inherited from PostsFederationService.getByCommunity</p>
 								<ul>
-									<li>Defined in packages/backend-federation-client/build/posts.d.ts:6</li>
+									<li>Defined in packages/backend-federation-client/build/posts.d.ts:38</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets all the posts in a community.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>username: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The username of the user getting the post.</p>
+									</div>
 								</li>
 								<li>
 									<h5>host: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The host from which to get the posts.</p>
+									</div>
 								</li>
 								<li>
 									<h5>community: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>ID of the community to obtain the posts from.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Post</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>All posts in the community.</p>
 						</li>
 					</ul>
 				</section>
@@ -280,22 +295,37 @@
 							<aside class="tsd-sources">
 								<p>Inherited from PostsFederationService.getById</p>
 								<ul>
-									<li>Defined in packages/backend-federation-client/build/posts.d.ts:7</li>
+									<li>Defined in packages/backend-federation-client/build/posts.d.ts:48</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a post by its ID.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>username: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The username of the user getting the post.</p>
+									</div>
 								</li>
 								<li>
 									<h5>host: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The host from which to get the post.</p>
+									</div>
 								</li>
 								<li>
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ID of the post to get.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Post</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The obtained <a href="backend_core.post.html"><code>Post</code></a>.</p>
 						</li>
 					</ul>
 				</section>
@@ -309,7 +339,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/services/posts.ts#L87">packages/backend-internal-server/src/services/posts.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/posts.ts#L87">packages/backend-internal-server/src/services/posts.ts:87</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -332,7 +362,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/services/posts.ts#L69">packages/backend-internal-server/src/services/posts.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/posts.ts#L69">packages/backend-internal-server/src/services/posts.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -358,7 +388,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/services/posts.ts#L42">packages/backend-internal-server/src/services/posts.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/services/posts.ts#L42">packages/backend-internal-server/src/services/posts.ts:42</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -382,22 +412,34 @@
 							<aside class="tsd-sources">
 								<p>Inherited from PostsFederationService.update</p>
 								<ul>
-									<li>Defined in packages/backend-federation-client/build/posts.d.ts:9</li>
+									<li>Defined in packages/backend-federation-client/build/posts.d.ts:67</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates a post by its ID.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>username: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The username of the user deleting the post.</p>
+									</div>
 								</li>
 								<li>
 									<h5>host: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The host on which to update the post.</p>
+									</div>
 								</li>
 								<li>
 									<h5>post: <span class="tsd-signature-type">UpdatePostProps</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Post</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The updated <a href="backend_core.post.html"><code>Post</code></a>.</p>
 						</li>
 					</ul>
 				</section>

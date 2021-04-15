@@ -66,6 +66,15 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Service used for interacting with
+							<a href="https://kiancross.github.io/cs3099a-specification/#tag/Communities">communities</a>
+						on a federated host.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -123,16 +132,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-federation-client/src/communities.ts#L20">packages/backend-federation-client/src/communities.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-federation-client/src/communities.ts#L40">packages/backend-federation-client/src/communities.ts:40</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return all communities on a given host.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>host: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Host to get communities from.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Community</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>All communities on the given host.</p>
 						</li>
 					</ul>
 				</section>
@@ -146,19 +164,32 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-federation-client/src/communities.ts#L44">packages/backend-federation-client/src/communities.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-federation-client/src/communities.ts#L73">packages/backend-federation-client/src/communities.ts:73</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns information for a given community on a host.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>host: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The host to get community information from.</p>
+									</div>
 								</li>
 								<li>
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ID of the community.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Community</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Information about the community, or <code>null</code> if it does
+							not exist.</p>
 						</li>
 					</ul>
 				</section>
@@ -234,6 +265,9 @@
 							</li>
 							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 								<a href="../modules/backend_federation_client.html#createpostprops" class="tsd-kind-icon">Create<wbr>Post<wbr>Props</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+								<a href="../modules/backend_federation_client.html#endpoints" class="tsd-kind-icon">Endpoints</a>
 							</li>
 							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 								<a href="../modules/backend_federation_client.html#updatepostprops" class="tsd-kind-icon">Update<wbr>Post<wbr>Props</a>

@@ -93,6 +93,7 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_internal_server.usersresolver.html#getallposts" class="tsd-kind-icon">get<wbr>All<wbr>Posts</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_internal_server.usersresolver.html#getsubscriptions" class="tsd-kind-icon">get<wbr>Subscriptions</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_internal_server.usersresolver.html#profile" class="tsd-kind-icon">profile</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_internal_server.usersresolver.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
@@ -109,19 +110,22 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Users<wbr>Resolver<span class="tsd-signature-symbol">(</span>usersService<span class="tsd-signature-symbol">: </span><a href="backend_internal_server.usersservice.html" class="tsd-signature-type" data-tsd-kind="Class">UsersService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="backend_internal_server.usersresolver.html" class="tsd-signature-type" data-tsd-kind="Class">UsersResolver</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Users<wbr>Resolver<span class="tsd-signature-symbol">(</span>usersService<span class="tsd-signature-symbol">: </span><a href="backend_internal_server.usersservice.html" class="tsd-signature-type" data-tsd-kind="Class">UsersService</a>, postsService<span class="tsd-signature-symbol">: </span><a href="backend_internal_server.postsservice.html" class="tsd-signature-type" data-tsd-kind="Class">PostsService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="backend_internal_server.usersresolver.html" class="tsd-signature-type" data-tsd-kind="Class">UsersResolver</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/resolvers/users.ts#L25">packages/backend-internal-server/src/resolvers/users.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/users.ts#L25">packages/backend-internal-server/src/resolvers/users.ts:25</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>usersService: <a href="backend_internal_server.usersservice.html" class="tsd-signature-type" data-tsd-kind="Class">UsersService</a></h5>
+								</li>
+								<li>
+									<h5>postsService: <a href="backend_internal_server.postsservice.html" class="tsd-signature-type" data-tsd-kind="Class">PostsService</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="backend_internal_server.usersresolver.html" class="tsd-signature-type" data-tsd-kind="Class">UsersResolver</a></h4>
@@ -132,6 +136,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getallposts" class="tsd-anchor"></a>
+					<h3>get<wbr>All<wbr>Posts</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Posts<span class="tsd-signature-symbol">(</span>user<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">User</span>, username<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Post</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/users.ts#L75">packages/backend-internal-server/src/resolvers/users.ts:75</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>user: <span class="tsd-signature-type">User</span></h5>
+								</li>
+								<li>
+									<h5>username: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Post</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getsubscriptions" class="tsd-anchor"></a>
 					<h3>get<wbr>Subscriptions</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -141,7 +171,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/resolvers/users.ts#L61">packages/backend-internal-server/src/resolvers/users.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/users.ts#L64">packages/backend-internal-server/src/resolvers/users.ts:64</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -165,7 +195,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of ResolverInterface.profile</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/resolvers/users.ts#L66">packages/backend-internal-server/src/resolvers/users.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/users.ts#L69">packages/backend-internal-server/src/resolvers/users.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -188,7 +218,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/resolvers/users.ts#L39">packages/backend-internal-server/src/resolvers/users.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/users.ts#L42">packages/backend-internal-server/src/resolvers/users.ts:42</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -214,7 +244,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/resolvers/users.ts#L48">packages/backend-internal-server/src/resolvers/users.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/users.ts#L51">packages/backend-internal-server/src/resolvers/users.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -240,7 +270,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/9824e16/packages/backend-internal-server/src/resolvers/users.ts#L30">packages/backend-internal-server/src/resolvers/users.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/769591d/packages/backend-internal-server/src/resolvers/users.ts#L33">packages/backend-internal-server/src/resolvers/users.ts:33</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -344,6 +374,9 @@
 								<ul>
 									<li class=" tsd-kind-constructor tsd-parent-kind-class">
 										<a href="backend_internal_server.usersresolver.html#constructor" class="tsd-kind-icon">constructor</a>
+									</li>
+									<li class=" tsd-kind-method tsd-parent-kind-class">
+										<a href="backend_internal_server.usersresolver.html#getallposts" class="tsd-kind-icon">get<wbr>All<wbr>Posts</a>
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-class">
 										<a href="backend_internal_server.usersresolver.html#getsubscriptions" class="tsd-kind-icon">get<wbr>Subscriptions</a>
