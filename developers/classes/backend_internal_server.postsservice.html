@@ -100,6 +100,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="backend_internal_server.postsservice.html#getbyid" class="tsd-kind-icon">get<wbr>ById</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_internal_server.postsservice.html#getunfilteredposts" class="tsd-kind-icon">get<wbr>Unfiltered<wbr>Posts</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_internal_server.postsservice.html#isadmin" class="tsd-kind-icon">is<wbr>Admin</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="backend_internal_server.postsservice.html#report" class="tsd-kind-icon">report</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="backend_internal_server.postsservice.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
@@ -136,7 +137,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/0f5c814/packages/backend-internal-server/src/services/posts.ts#L49">packages/backend-internal-server/src/services/posts.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/b0f79c7/packages/backend-internal-server/src/services/posts.ts#L54">packages/backend-internal-server/src/services/posts.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -162,7 +163,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/0f5c814/packages/backend-internal-server/src/services/posts.ts#L42">packages/backend-internal-server/src/services/posts.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/b0f79c7/packages/backend-internal-server/src/services/posts.ts#L47">packages/backend-internal-server/src/services/posts.ts:47</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -189,7 +190,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides PostsFederationService.create</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/0f5c814/packages/backend-internal-server/src/services/posts.ts#L20">packages/backend-internal-server/src/services/posts.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/b0f79c7/packages/backend-internal-server/src/services/posts.ts#L20">packages/backend-internal-server/src/services/posts.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -219,7 +220,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides PostsFederationService.delete</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/0f5c814/packages/backend-internal-server/src/services/posts.ts#L32">packages/backend-internal-server/src/services/posts.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/b0f79c7/packages/backend-internal-server/src/services/posts.ts#L32">packages/backend-internal-server/src/services/posts.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -308,7 +309,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/0f5c814/packages/backend-internal-server/src/services/posts.ts#L82">packages/backend-internal-server/src/services/posts.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/b0f79c7/packages/backend-internal-server/src/services/posts.ts#L87">packages/backend-internal-server/src/services/posts.ts:87</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -331,7 +332,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/0f5c814/packages/backend-internal-server/src/services/posts.ts#L64">packages/backend-internal-server/src/services/posts.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/b0f79c7/packages/backend-internal-server/src/services/posts.ts#L69">packages/backend-internal-server/src/services/posts.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -341,6 +342,29 @@
 								</li>
 								<li>
 									<h5>post: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Post</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="report" class="tsd-anchor"></a>
+					<h3>report</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">report<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/kiancross/unifed/blob/b0f79c7/packages/backend-internal-server/src/services/posts.ts#L42">packages/backend-internal-server/src/services/posts.ts:42</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -477,6 +501,9 @@
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-class">
 										<a href="backend_internal_server.postsservice.html#isadmin" class="tsd-kind-icon">is<wbr>Admin</a>
+									</li>
+									<li class=" tsd-kind-method tsd-parent-kind-class">
+										<a href="backend_internal_server.postsservice.html#report" class="tsd-kind-icon">report</a>
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 										<a href="backend_internal_server.postsservice.html#update" class="tsd-kind-icon">update</a>
